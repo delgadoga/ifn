@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="Instituto de Neurología y Sueño lider en Argentina. Tercer generación de médicos dedi">
+    <meta name="keywords"  content="sueño, neurologia, insomnio, apneas, ronquidos, medicina, médicos especialistas, experto en sueño">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Ferrero de Neurologia y Sueño</title>
+    <!-- Fuentes,-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Iconos,-->
+    <link rel="stylesheet" href="http://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!--  Bootstraps  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Hoja de estilos-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class=gBodyHome>
+    <header class="Header">
+        <div class="rrss">
+            <ul class="rrss__ul">
+                <li class="rrss__ul__li"><a href="https://www.facebook.com/InstitutoFerrero/" class="facebook"><i class="fab fa-facebook-square rrssTransform"></i></a></li>
+                <li class="rrss__ul__li"><a href="https://www.instagram.com/institutoferrero/" class="instagram"><i class="fab fa-instagram-square rrssTransform"></i></a></li>
+                <li class="rrss__ul__li"><a href="https://www.linkedin.com/company/instituto-ferrero-de-neurologia-y-sue-o/" class="linkedin"><i class="fab fa-linkedin rrssTransform"></i></a></li>
+            </ul>    
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logoifn.png" alt="logo ifn" class="imgLogo" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acerca de</a>
+                            <ul  class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="info/nuestra_historia.html" >Nuestra Historia</a></li>
+                                <li><a class="dropdown-item" href="info/equipo_medico.html">Equipo Médico</a></li>
+                                <li><a class="dropdown-item" href="info/instalaciones.html" >Nuestras Instalaciones</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="info/blog_del_director.html" >Blog del Director</a><li>      
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a  class="nav-link" href="info/problemas_de_sueno.html">Problemas de Sueño</a></li>
+                        <li class="nav-item"><a  class="nav-link" href="info/talleres_y_cursos.html">Talleres</a></li>
+                        <li class="nav-item"><a  class="nav-link" href="info/cobertura_medica.html">Cobertura Médica</a></li>
+                        <li class="nav-item"><a  class="nav-link" href="info/pedir_turno.html">Turno</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ENCABEZADO HOME-->
+    <section class="home gPrincipalHome">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+            </ol>
+          </nav>
+        <p class="home__botPaciente">
+            <button class="btn btn-primary botonIfn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Acceso Pacientes
+            </button>
+        </p>
+        <form class="collapse home__formPaciente" id="collapseExample">
+            <div class="mb-3 home__formPaciente__label">
+              <label for="exampleInputEmail1" class="form-label ">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 home__formPaciente__label">
+              <label for="exampleInputPassword1" class="form-label ">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check home__formPaciente__label">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Guardar Usuario</label>
+            </div>
+            <button type="submit" class="btn btn-primary botonIfn home__formPaciente__conf">Confirmar</button>
+        </form>
+        <div class="home__banner"> 
+            <h1 class="home__banner__titulo animate__animated animate__zoomIn">Somos expertos en Neurología y Medicina del Sueño</h1>
+            <div class="home__banner__turno">
+                <a href="info/pedir_turno.html" class="home__banner__turno__a">Quiero pedir un turno</a>
+            </div>
+            <!-- Button trigger modal --> 
+            <button type="button" class="btn btn-primary home__banner__protocolo botonIfn botonIfn--modificado" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Protocolo Covid-19
+            </button>
+            
+            <!-- Modal--> 
+            <div class="modal fade home__banner__protocolo" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">IFN INFORMA</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h3 class="estimado"><i class="fas fa-exclamation-circle iEstimado"></i>ESTIMADO PACIENTE</h3>
+                                <p>Le informamos los modos de atención que ofrecemos a nuestros pacientes:</p>
+                                <p>Si Ud necesita una CONSULTA, puede hacerla</p>
+                                <p>● Consulta PRESENCIAL en Junin 1120 (*)
+                                <br> ● Consulta REMOTA por Video (ó Audio solo) vía <a href="https://pacientes.ifn.com.ar/welcome"> Pacientes</a></p>
+                                <p>Si Ud necesita un UN ESTUDIO de SUEÑO, puede realizarlo:</p>
+                                <p>● En uno de nuestros LABORATORIOS en Junín 1120
+                                <br>● En su DOMICILIO, nosotros llevamos y recogemos el equipo (**)</p>
+                                <p>Si Ud necesita un UN ESTUDIO de EEG, Mapeo, EMG, ó equivalentes</p>
+                                <p>(*) IMPORTANTE : Pacientes menores de 65 años, ausencia de síntomas en las últimas dos
+                                semanas, sin factores de riesgo ( cardiopatías, diabetes, criterios de EPOC, insuficiencia
+                                respiratoria, etc ) y que se atienden por enfermedades con riesgo elevado, donde el tratamiento y control de su enfermedad puede considerarse fundamental. Por ejemplo:apneas severas,
+                                comienzo, control ó ajuste de Cpap , insomnio severo persistente, estudios por epilepsia,
+                                evaluaciones cognitivas, y equivalentes.</p>
+                                <p>(**) Consulte restricciones geográficas</p>
+                                <p>PARA TURNOS</p>
+                                <p>● Por teléfono 011-5031-7300
+                                <br>● Por Whatsapp (54-9-11) 6217-9590 (Chat unicamente)
+                                <br>● Desde la web: <a href="https://pacientes.ifn.com.ar/welcome">Pacientes</a></p>
+                        </div>
+                        <div class="modal-footer botonLeido">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Leído</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <h4 class="home__contacto"> Junín 1120 - CABA <a href="#contacto" class="home__contacto__mapaIcon"><i class="fas fa-map-marker-alt"></i></a>Teléfono 5031-7300  |  Turnos +54 9 11 6217-9590 |  Turnos por PSG +54 9 11 6217-9393 </h4>
+    </section>
+
+    <!-- Aqui comienza la Sección 1-->
+    <h2 class="gEleginos">Porqué elegirnos</h2>
+        <!-- COLUMNA 1-->
+    <div class="gEleginos1">
+        <img src="img/iconodoctor.svg" class="gEleginos1__doctor" alt="icono doctor">
+        <h3><strong> Nuestro Equipo Médico</strong></h3>
+    </div>
+    <!-- COLUMNA 2-->
+    <div class="gEleginos2">
+        <img src="img/iconequipamiento.svg" class="gEleginos2__instalaciones" alt="icono instalaciones">
+        <h3><strong> Nuestras Instalaciones</strong></h3>
+    </div>
+    <!-- COLUMNA 3-->
+    <div class="gEleginos3">
+        <img src="img/iconocobertura.svg" class="gEleginos3__cobertura" alt="icono cobertura">
+        <h3><strong> Amplia Cobertura</strong></h3>
+    </div>
+
+    <!-- Aqui comienza la Sección 2-->
+
+    <figure class="gAvancesF">
+        <img src="img/avancesmedsueno.jpg" class="imgZoom" alt="Dos médicos analizando estudios de neurología y un tercer médico mirando a la camara">        
+    </figure> 
+    <div class="gCardAvances">
+        <h3 class="gCardAvances__titulo"><strong> Últimos Avances en la Medicina del Sueño</strong></h3>
+        <p class="gCardAvances__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo qui quisquam debitis dolor ut maxime accusantium reprehenderit ratione rem?</p>
+    </div>
+
+     <!--Aqui comienza la Sección 3-->
+    <h2 class="gNeuroT">Neurología y Sueño</h2>
+    <div class="card gNeuro1">
+        <figure>
+            <img src="img/problemasdesueno.jpg" class="card-img-top imgZoom" alt="Mujer cansada con insomnio">
+        </figure>
+        <div class="card-body">
+            <h5 class="card-title">Insomnio</h5>
+            <p class="card-text">Lo podríamos resumir como dormir poco o dormir mal. Con diferentes grados de severidad, tiene insomnio un 30% a 40% de la población general.Se suele asociar el insomnio a...</p>
+            <a href="info/problemas_de_sueno.html" class="btn btn-primary botonIfn">Ver más</a>
+        </div>
+    </div>
+
+    <div class="card gNeuro2">
+        <figure>
+            <img src="img/apneasyronquidos.jpg" class="card-img-top imgZoom" alt="Mujer no puede dormir porque su pareja ronca">
+        </figure>
+        <div class="card-body">
+            <h5 class="card-title">Apneas y Ronquidos</h5>
+            <p class="card-text">Las apneas obstructivas del sueño y su versión parcial, las hipopneas son pausas respiratorias, producidas por la obstrucción mecánica de la vía respiratoria alta.</p>
+            <a href="info/problemas_de_sueno.html" class="btn btn-primary botonIfn">Ver más</a>
+        </div>
+    </div>
+
+    <div class="card gNeuro3">
+        <figure>
+            <img src="img/somnolencia.jpg" class="card-img-top imgZoom" alt="Mujer con somnolenecia">
+        </figure>
+        <div class="card-body">
+            <h5 class="card-title">Somnolencia</h5>
+            <p class="card-text">Los médicos hablamos de ESD, es decir Excesiva Somnolencia Diurna, cuando las personas tienen sueño durante el día, con frecuencia, sin un motivo razonable</p>
+            <a href="info/problemas_de_sueno.html" class="btn btn-primary botonIfn">Ver más</a>
+        </div>
+    </div>
+    
+    <!-- Aqui comienza la Sección 4-->
+
+    <div class=" gAccidentesC">
+        <h3 class="tAccidentes"><strong> Evitá accidentes de tráfico</strong></h3>
+        <p class="tAccidentes2">La mayor parte de la gente sabe del peligro de manejar intoxicado, pero muchos no saben que manejar cansado también perjudica sus habilidades y lo pone en peligro.</p>
+    </div>
+    <figure class="gAccidentesF">
+        <img src="img/accidenteauto.jpg" class="imgZoom" alt="Hombre dormido choca accidente de auto">
+    </figure>
+    <!-- Aqui comienza la Sección 5-->
+ 
+    <h2 class="gMapaT" id="contacto">Contacto</h2>
+    <div class="CardContacto gMapaC">
+        <i class="fas fa-map-marker-alt iconoMapa2"></i>
+        <p> Junín 1120, C1113 AAH, Buenos Aires</p>
+        <p>Rotativas 5031-7300 |  Turnos +54 9 11 6217-9590 |  Turnos por PSG +54 9 11 6217-9393</p>
+        <p>info@ifn.com.ar</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3525126652476!2d-58.39967468519554!3d-34.59524656455612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca96f796dffd%3A0xe38d0f0306773cf5!2sIFN%20Instituto%20Ferrero%20de%20Neurolog%C3%ADa%20y%20Sue%C3%B1o!5e0!3m2!1ses-419!2sar!4v1623177727311!5m2!1ses-419!2sar" class="gMapaF"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <!-- Boton Whatsapp-->    
+    <a href="https://api.whatsapp.com/send?phone=5491162179590" class="whatsapp"><img src="./img/whatsapp.svg" class="iconWhatsapp" alt="icono whatsapp"></i></a></li>
+    <!-- RRSS II-->    
+    <div class="rrssf gFooter1">
+        <ul class="rrssf__ul">
+            <li class="rrssf__ul__li"><a href="https://www.facebook.com/InstitutoFerrero/" class="facebook"><i class="fab fa-facebook-square rrssTransform"></i></a></li>
+            <li class="rrssf__ul__li"><a href="https://www.instagram.com/institutoferrero/" class="instagram"><i class="fab fa-instagram-square rrssTransform"></i></a></li>
+            <li class="rrssf__ul__li"><a href="https://www.linkedin.com/company/instituto-ferrero-de-neurologia-y-sue-o/" class="linkedin"><i class="fab fa-linkedin rrssTransform"></i></a></li>
+        </ul>    
+    </div>
+    <footer class="Footer">
+        <div class="mdsRow">
+            <div class="mds">
+                <a class="mds mds__a" href="index.html"><h3 class="mds mds__a">Inicio</h3></a>
+            </div>
+            <div class="mds">
+                <h3 class="mds">Acerca de</h3>
+                <ul class="mds mds__ul">
+                    <li class="mds mds__li"><a class="mds mds__a" href="info/nuestra_historia.html" >Nuestra Historia</a></li>
+                    <li class="mds mds__li"><a class="mds mds__a" href="info/equipo_medico.html">Equipo Médico</a></li>
+                    <li class="mds mds__li"><a class="mds mds__a" href="info/instalaciones.html" >Instalaciones</a></li>
+                    <li class="mds mds__li"><a class="mds mds__a" href="info/blog_del_director.html" >Blog del Director</a><li>      
+                </ul>
+            </div>
+            <div class="mds">
+                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds mds__a">Problemas de Sueño</h3></a>
+                <ul class="mds mds__ul">
+                    <li class="mds mds__li"><a class="mds mds__a" href="info/problemas_de_sueno.html#insomnio" >Insomnio</a></li>
+                    <li class="mds mds__li"><a class="mds mds__a" href="info/problemas_de_sueno.html#apneas" >Apneas</a></li>
+                    <li class="mds mds__li"><a class="mds mds__a" href="info/problemas_de_sueno.html#somnolencia">Somnolencia</a></li>
+                </ul>
+            </div>
+            <div class="mds">
+                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds mds__a">Talleres y Cursos</h3></a>
+                <ul class="mds mds__ul">
+                    <li class="mds mds__li"><a class="mds mds__a" href="info/talleres_y_cursos.html#talleres" >Talleres Abiertos</a></li>
+                    <li class="mds mds__li"><a class="mds mds__a" href="info/talleres_y_cursos.html#cursos" >Cursos para Profesionales</a></li>      
+                </ul>
+            </div>
+            <div class="mdsRow">
+                <a class="mds mds__a" href="info/cobertura_medica.html"><h3 class="mds mds__a">Cobertura Médica</h3></a>
+                <a class="mds mds__a" href="info/pedir_turno.html"><h3 class="mds mds__a">Pedir un Turno</h3></a>
+            </div> 
+        </div>
+        <hr>
+        Copywrite 2021</footer>
+    <!-- BOOTSTRAP JS-->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+</html>
