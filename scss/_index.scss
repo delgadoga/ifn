@@ -1,0 +1,284 @@
+@mixin alinear($grid-area,$text-align,$justify-self,$align-self,$margin){
+    grid-area: $grid-area;
+    text-align: $text-align;
+    justify-self: $justify-self;
+    align-self: $align-self;
+    margin: $margin;
+}
+
+/*      GRIDS        */
+.gBodyHome{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas: 
+                        "Header Header Header"
+                        "gPrincipalHome gPrincipalHome gPrincipalHome"
+                        "gEleginos gEleginos gEleginos"
+                        "gEleginos1 gEleginos2 gEleginos3"
+                        "gAvancesF gAvancesF gAvancesC"
+                        "gNeuroT gNeuroT gNeuroT"
+                        "gNeuro1 gNeuro2 gNeuro3"
+                        "gAccidentesC gAccidentesF gAccidentesF"
+                        "gMapaT gMapaT gMapaT"
+                        "gMapaF gMapaF gMapaC"
+                        "gFooter1 gFooter1 gFooter1"
+                        "Footer Footer Footer"
+    ;
+}
+
+.home{
+    grid-area: gPrincipalHome;
+    .home__botPaciente{
+        margin-top: 1rem;
+    }
+    .home__formPaciente{
+        .home__formPaciente__label{
+            width: 50%;
+            margin-left: 1%;
+        }
+        .home__formPaciente__conf{
+             margin-bottom: 1rem;
+        }
+
+    }
+    .home__banner{
+        background-image: url(../img/doc2ok.png);
+        width: 100%;
+        height: 18.75em;
+        .home__banner__titulo{
+            font-family:$fontifn2;
+            background-image: none;
+            background-color: transparent;
+            font-size: 2rem;
+            width: 25%;
+            margin-top: 1rem;
+            margin-left: 2rem;
+            height: max-content;
+            color: cornsilk;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+            position: absolute;
+            z-index: 1; 
+        }
+        .home__banner__turno{
+            margin-top: 8rem;
+            margin-left: 65%;
+            font-size: 0.9rem;
+            display: flex;
+            position: absolute;
+            text-align: center;
+            font-weight: 500;
+            background-color: $azulifn;
+            color: #fff;
+            border: none;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            border-radius: 2px;
+            z-index: 1;
+            .home__banner__turno__a{
+                text-transform: uppercase;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                padding: 15px 30px;
+                &:hover{
+                    color: $azulifn;
+                    font-weight: 600;
+                }        
+            }
+        }
+        .home__banner__turno::before {
+            height: 100%;
+            width: 0%;
+            background-color: $huesoifn;
+            color: $azulifn;
+            left: 0;
+            top: 0;
+            position: absolute;
+            content: "";
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            z-index: -1;
+        }
+        .home__banner__turno:hover::before {
+            width: 100%;
+        }
+        .home__banner__protocolo{
+            position: absolute;
+            margin-left: 9.8%;
+            margin-top: 17%;
+        }
+    }
+    .home__contacto{
+        text-align: center;
+        padding: 0.5rem;
+        background-color: $azulifn;
+        color: $huesoifn;
+        font-size: 1em;
+        .home__contacto__mapaIcon{
+            font-size: 1.1rem;
+            padding: 0.8em;
+            color:$blancoifn;
+            &:hover{
+                color: #37be7f;
+            }
+        }
+    }
+}
+
+.estimado{
+    margin-left: 0;
+    width: 100%;
+    color: $blancoifn;
+    background-color: $azulifn;
+    text-align: center;
+    .iEstimado{
+        margin-right: 0.5rem;
+    }
+}
+
+.gEleginos{
+    grid-area: gEleginos;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.gEleginos1{
+    @include alinear(gEleginos1,center,flex-end,center,2rem 0 2rem 0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .gEleginos1__doctor {
+        margin-right: 18%;
+        width: 20%;
+    }  
+}
+
+.gEleginos2{
+    @include alinear(gEleginos2,center,center,center,2rem 0 2rem 0);
+    .gEleginos2__instalaciones{
+        width: 20%;        
+    }
+}
+.gEleginos3{
+    @include alinear(gEleginos3,center,flex-start,center,2rem 0 2rem 0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .gEleginos3__cobertura {
+        margin-left: 15%;
+        width: 20%;
+    }
+}
+
+.gAvancesF{
+    grid-area: gAvancesF;
+    justify-self: center;
+    align-self: center;
+    margin: 2rem 0 2rem 0;
+    border-radius: 5px;
+}
+
+.gCardAvances{
+    grid-area: gAvancesC;
+    justify-self: center;
+    align-self: center;
+    margin: 2rem 0 2rem 0;
+    margin-right: 5rem;
+    width: 80%;
+    padding: 1rem;
+    height: auto;
+    text-align: center;
+    background-color: $azulifn;
+    color: white;
+    opacity: 0.8;
+    border-radius: 5px;
+    &:hover{
+        opacity: 1;
+    }
+    .gCardAvances__titulo, .gCardAvances__texto{
+        color: cornsilk;
+    }
+}
+.gNeuroT{
+    grid-area: gNeuroT;
+}
+.gNeuro1{
+    @include alinear(gNeuro1,center,flex-end,center,2rem 0 2rem 0);
+    width: 18rem;
+}
+.gNeuro2{
+    @include alinear(gNeuro2,center,center,center,2rem 0 2rem 0);
+    width: 18rem;
+}
+.gNeuro3{
+    @include alinear(gNeuro3,center,self-start,center,2rem 0 2rem 0);
+    width: 18rem;
+}
+
+.gAccidentesC{
+    @include alinear(gAccidentesC,center,center,center,2rem 0 2rem 0);
+    width: 80%;
+    margin-left: 5rem;
+    padding: 1rem;
+    height: auto;
+    text-align: center;
+    background-color: $azulifn;
+    color: white;
+    opacity: 0.8;
+    border-radius: 5px;
+    .tAccidentes,.tAccidentes2 {
+        color: cornsilk;
+    }
+}
+.gAccidentesC:hover{
+    opacity: 1;
+}
+.gAccidentesF{
+    grid-area: gAccidentesF;
+    justify-self: center;
+    align-self: center;
+    margin: 2rem 0 2rem 0;
+    border-radius: 5px;
+}
+.gMapaT{
+    grid-area: gMapaT;
+    text-align: center;
+}
+.gMapaC{
+    @include alinear(gMapaC,center,center,center,2rem 0 2rem 0);
+    width: 60%;
+    .iconoMapa2{
+        font-size: 2.5rem;
+        color: $rojoifn;
+        margin-bottom: 1rem;
+    }
+}
+.gMapaF{
+    grid-area: gMapaF;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    height: 28rem;
+    margin: 2rem 0 2rem 0;
+}
+.whatsapp{
+    .iconWhatsapp{
+        width: 5em;
+        display: flex;
+        position: fixed;
+        top: 80%;
+        left: 85%;
+        z-index: 2;
+        opacity: 0.9;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+        &:hover{
+            opacity: 1;
+            transform: scale(1.3);
+        }
+    }
+}

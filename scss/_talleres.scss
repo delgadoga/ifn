@@ -1,0 +1,137 @@
+/*----------------------------------------------- TALLERES -------------------------------------- */
+.gTalleres{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(15, auto);
+    grid-template-areas: 
+                    "Header Header"
+                    "gtalleresPrincipal gtalleresPrincipal"
+                    "gTalleresOpciones gTalleresOpciones"
+                    "gTalleresVideoT gTalleresVideoT"
+                    "gTalleresVideo gTalleresVideo"
+                    "gTalleresAbiertos gTalleresAbiertos"
+                    "gTalleresA1 gTalleresA1Card"
+                    "gTalleresA2 gTalleresA2Card"
+                    "gCursos gCursos"
+                    "gCursos1Card gCursos1"
+                    "gCursos2Card gCursos2"
+                    "gTalleresCancionT gTalleresCancionT"
+                    "gTalleresCancion gTalleresCancion"
+                    "gFooter1 gFooter1"
+                    "Footer Footer"
+    ;
+}
+.gTalleresPrincipal{
+    grid-area: gtalleresPrincipal;
+}
+.gTalleresOpciones{
+    grid-area: gTalleresOpciones;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+}
+.gTalleresVideoT{
+    grid-area: gTalleresVideoT;
+}
+.gTalleresVideo{
+    grid-area: gTalleresVideo;
+    justify-self: center;
+    margin: 2em;
+}
+.gTalleresAbiertos{
+    grid-area: gTalleresAbiertos;
+}
+.gTalleresA1{
+    grid-area: gTalleresA1;
+    justify-self: flex-end;
+    margin: 2em;
+}
+.gTalleresA1Card{
+    grid-area: gTalleresA1Card;
+    justify-self: flex-start;
+    align-self: center;
+    margin: 2em;
+    width: 50%;
+    text-align: center;
+}
+.gTalleresA2{
+    grid-area: gTalleresA2;
+    justify-self: flex-end;
+    margin: 2em;
+}
+.gTalleresA2Card{
+    grid-area: gTalleresA2Card;
+    justify-self: flex-start;
+    align-self: center;
+    margin: 2em;
+    width: 50%;
+    text-align: center;
+}
+.gCursos{
+    grid-area: gCursos;
+}
+.gCursos1Card{
+    grid-area: gCursos1Card;
+    justify-self: flex-end;
+    align-self: center;
+    margin: 2em;
+    width: 50%;
+    text-align: center;
+}
+.gCursos1{
+    grid-area: gCursos1;
+    justify-self: flex-start;
+    margin: 2em;
+}
+.gCursos2Card{
+    grid-area: gCursos2Card;
+    justify-self: flex-end;
+    align-self: center;
+    margin: 2em;
+    width: 50%;
+    text-align: center;
+}
+.gCursos2{
+    grid-area: gCursos2;
+    justify-self: flex-start;
+    margin: 2em;
+}
+.gTalleresCancionT{
+    grid-area: gTalleresCancionT;
+}
+.gTalleresCancion{
+    grid-area: gTalleresCancion;
+    justify-self: center;
+    margin: 2em;
+}
+.suenoyninos, .suenoyproductividad, .curso1, .curso2{
+    width: 22em;
+}
+
+.divTalleres{
+    width: 10rem;
+    text-align: center;
+    justify-self: flex-end;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 2rem;
+    padding: 1em;
+    border-radius: 0.3em;
+}
+.divCursos{
+    width: 10rem;
+    text-align: center;
+    justify-self: flex-end;
+    background-color: cornflowerblue;
+    margin: 2rem;
+    padding: 1em 0.1em 1em 0.1em;
+    border-radius: 0.3em;
+}
+
+
+.aTalleres, .aCursos {
+    text-decoration: none;
+    text-align: center;
+    color: $blancoifn;
+}

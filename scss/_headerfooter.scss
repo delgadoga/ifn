@@ -1,0 +1,160 @@
+@mixin rrssdisplay($display, $flex-direction, $justify-content){
+    display: $display;  
+    flex-direction: $flex-direction; 
+    justify-content: $justify-content;
+}
+
+// HEADER CO//
+
+.Header{
+    grid-area: Header;
+}
+.rrss{
+    @include rrssdisplay(flex, row, flex-end);
+    position:absolute;
+    z-index: 2;
+    margin-top: 1.25em;
+    margin-left: 85%;
+    .rrss__ul {
+        @include rrssdisplay(flex, row, flex-end);
+        margin-left: 2px;
+        margin-right: 2px;
+        .rrss__ul__li {
+            @include rrssdisplay(flex, row, flex-end);
+            margin-left: 2px;
+            margin-right: 2px;
+            font-size: 2rem;
+            .facebook{
+                color: $azulifn;
+                &:hover{
+                    color:$azulfb;
+                }
+                &:hover{
+                    transform: translate(0, -5px);
+                    transition: 0.3s ease-in-out;
+                }
+            }
+            .instagram{
+                color: $azulifn;
+                &:hover{
+                    color:$rosaig;
+                }
+                .rrssTransform{
+                    &:hover{
+                        transform: translate(0, -5px);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+            .linkedin{
+                color: $azulifn;
+                &:hover{
+                    color:$azullk;
+                }
+                .rrssTransform{
+                    &:hover{
+                        transform: translate(0, -5px);
+                        transition: 0.3s ease-in-out;
+                    }   
+                } 
+            }
+        }           
+    }
+}
+
+//FOOTER//
+
+.gFooter1{
+    grid-area: gFooter1;
+}
+.rrssf{
+    @include rrssdisplay(flex, row, center);
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    .rrssf__ul{
+        font-size: 1em;
+        @include rrssdisplay(flex, row, center);
+        padding-left: 0;
+        .rrssf__ul__li{
+            margin: 0.1em;
+            font-size: 1.5em;
+            @include rrssdisplay(flex, row, center);
+            padding-left: 0;
+            .facebook{
+                color: $azulifn;
+                &:hover{
+                    color:$azulfb;
+                }
+                .rrssTransform{
+                    &:hover{
+                        transform: translate(0, -5px);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+            .instagram{
+                color: $azulifn;
+                &:hover{
+                    color:$rosaig;
+                }
+                .rrssTransform{
+                    &:hover{
+                        transform: translate(0, -5px);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+            .linkedin{
+                color: $azulifn;
+                &:hover{
+                    color:$azullk;
+                }
+                .rrssTransform{
+                    &:hover{
+                        transform: translate(0, -5px);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+.Footer{
+    grid-area: Footer;
+    height: auto;
+    background-color: rgb(5, 4, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0.3em;
+}
+
+
+// MAPA DE SITIO //
+.mds{
+    color: $blancoifn;
+    text-decoration: none;
+}
+
+.mds__ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.mds__li{
+    list-style-type: none;
+}
+
+.mds__a{
+    &:hover{
+        color: $azulifn;
+    }
+}
+
+.mdsRow{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+}

@@ -1,0 +1,273 @@
+
+/*-----------------------------------------          RESPONSIVE TABLET NOTEBOOK     -------------------------------------------------------  */
+/*--------------------------------------------            DESDE 992PX              -------------------------------------------------------  */
+
+@media only screen and (min-width:992px)  and (max-width:1024px) {
+    .home__banner__titulo{
+        font-size: 1.7rem;
+    }
+    .home .home__banner .home__banner__protocolo {
+        margin-left: 69%;
+        margin-top: 20%;
+    }
+    .rrss{
+        margin-top: 6.5em;
+    }
+    .gAvancesF{
+        transform: scale(0.8);
+    }
+}
+
+/*-----------------------------------------          RESPONSIVE TABLET              -------------------------------------------------------  */
+/*--------------------------------------------           769 a 991 PX              -------------------------------------------------------  */
+
+@media only screen and (min-width:769px) and (max-width:991px) {
+    nav{
+        justify-content: center;
+    }
+    .rrss{
+        margin-top: 1.3em;
+        margin-left: 50%;
+    }
+    .home .home__banner .home__banner__titulo {
+        width: 45%;
+        margin-top: 1.9rem;
+    }
+    .home .home__banner .home__banner__protocolo {
+        position: absolute;
+        margin-left: 69%;
+        margin-top: 25%;
+    }
+    .gEleginos1, .gEleginos2, .gEleginos3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gEleginos1 .gEleginos1__doctor{
+        margin-right: 0;
+    }
+    .gEleginos3 .gEleginos3__cobertura {
+        margin-left: 0;
+    }
+    .gNeuro1, .gNeuro2, .gNeuro3{
+        justify-self:center;
+        width: 15rem;
+    }
+    .gAvancesF{
+        transform: scale(0.7);
+    }
+    .gNeuro1, .gNeuro2, .gNeuro3{
+        width: 17rem;
+        
+    }
+}
+
+/*--------------------------------------------       RESPONSIVE TABLET       -------------------------------------------------------  */
+/*--------------------------------------------         DE 426 a 768 px       -------------------------------------------------------  */
+@media only screen and (min-width:436px) and (max-width:768px)  {
+
+    .imgLogo{
+        width: 100%;
+        margin-bottom: 0.6em;
+    }
+    .rrss{
+        margin-top: 2em;
+        margin-left: 58%;
+    }
+    .home{
+        .home__banner{
+            .home__banner__titulo {
+                width: 45%;
+                margin-top: 1.9rem;
+            }
+            .home__banner__protocolo {
+                margin-left: 71%;
+                margin-top: 35%;
+            }
+            .home__banner__turno {
+                margin-left: 68%;
+                margin-top: 27%;
+                width: auto;
+                .home__banner__turno__a {
+                    padding: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }  
+    }
+    .Header{
+        grid-area: "Header";
+    }
+    .gEleginos1, .gEleginos2, .gEleginos3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .gEleginos1 .gEleginos1__doctor{
+        margin-right: 0;
+    }
+    .gEleginos3 .gEleginos3__cobertura {
+        margin-left: 0;
+        justify-self:center;
+
+    }
+    .gNeuro1, .gNeuro2, .gNeuro3{
+        justify-self:center;
+        width: 70%;
+    }
+    .gCardAvances{
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .gAvancesF{
+        transform: scale(0.6);
+    }
+    .gAccidentesF{
+        transform: scale(0.7);
+    }
+
+    .gAccidentesC {
+        margin-left: 0;
+    }
+    .whatsapp{
+        .iconWhatsapp{
+            width: 4.1em;
+            left: 75%;
+        }
+    }
+    
+    .gBodyHome{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(19, auto);
+        grid-template-areas: 
+                            "Header"
+                            "gPrincipalHome"
+                            "gEleginos"
+                            "gEleginos1"
+                            "gEleginos2" 
+                            "gEleginos3"
+                            "gAvancesF"
+                            "gAvancesC"
+                            "gNeuroT"
+                            "gNeuro1"
+                            "gNeuro2"
+                            "gNeuro3"
+                            "gAccidentesC"
+                            "gAccidentesF"
+                            "gMapaT"
+                            "gMapaF" 
+                            "gMapaC"
+                            "gFooter1"
+                            "Footer"
+        ;
+    }
+}
+/*--------------------------------------------       RESPONSIVE MOBILE        -------------------------------------------------------  */
+/*--------------------------------------------         HASTA 425px            -------------------------------------------------------  */
+@media only screen and (max-width:435px){
+    .imgLogo{
+        width: 100%;
+        margin-bottom: 0.4em;
+    }
+    .rrss{
+        margin-top: 5.2em;
+        margin-left: 40%;
+    }
+    .home{
+        .home__banner{
+            .home__banner__titulo {
+                width: 100%;
+                margin-top: 1rem;
+                margin-left: 0;
+            }
+            .home__banner__protocolo {
+                margin-left: 25%;
+                margin-top: 77%;
+            }
+            .home__banner__turno {
+                margin-left: 20%;
+                margin-top: 60%;
+                width: auto;
+                .home__banner__turno__a {
+                    padding: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }  
+    }
+    .Header{
+        grid-area: "Header";
+    }
+    .gEleginos1, .gEleginos2, .gEleginos3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .gEleginos1 .gEleginos1__doctor{
+        margin-right: 0;
+    }
+    .gEleginos3 .gEleginos3__cobertura {
+        margin-left: 0;
+        justify-self:center;
+
+    }
+    .gNeuro1, .gNeuro2, .gNeuro3{
+        justify-self:center;
+        width: 70%;
+    }
+    .gCardAvances{
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .gAvancesF{
+        transform: scale(0.5);
+    }
+    .gAccidentesF{
+        transform: scale(0.6);
+    }
+
+    .gAccidentesC {
+        margin-left: 0;
+    }
+    .whatsapp{
+        .iconWhatsapp{
+            width: 4.1em;
+            left: 75%;
+        }
+    }
+    .gBodyHome{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(19, auto);
+        grid-template-areas: 
+                            "Header"
+                            "gPrincipalHome"
+                            "gEleginos"
+                            "gEleginos1"
+                            "gEleginos2" 
+                            "gEleginos3"
+                            "gAvancesF"
+                            "gAvancesC"
+                            "gNeuroT"
+                            "gNeuro1"
+                            "gNeuro2"
+                            "gNeuro3"
+                            "gAccidentesC"
+                            "gAccidentesF"
+                            "gMapaT"
+                            "gMapaF" 
+                            "gMapaC"
+                            "gFooter1"
+                            "Footer"
+        ;
+    }
+}

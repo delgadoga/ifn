@@ -1,0 +1,23 @@
+.divProblemas{
+    background-color: $grisifn;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 10%;
+    padding:1rem;
+    &--modificado{
+        background-color: $blancoifn;
+    }
+}
+.gProblemas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+                    "Header"
+                    "gProblemas"
+                    "sProblemas"
+                    "gFooter1"
+                    "Footer"
+    ;
+}

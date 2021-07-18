@@ -1,0 +1,62 @@
+/*------------------------------------------ PEDIR TURNO ----------------------------------------- */
+.categorias{
+    color: darkblue;
+}
+table{
+    margin-left: 20px;
+    border: 2px solid rgb(65, 65, 83)
+}
+th{
+    background-color: lightblue;
+    text-align: center;
+    border:none;
+    margin:0;
+}
+tr,td {
+    text-align: left;
+    vertical-align: center;
+    border: 1px solid;    
+    margin:0;
+}
+.formulario{
+    background-image: url(../img/femaledoctor.jpg);
+    width: 100%;
+}
+
+.formularioTexto{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+#formTurno{
+    text-decoration: none;
+    text-transform: none;
+}
+.divPadre{
+    display: grid;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    align-items: center;
+    border: solid #3b5998;
+    grid-template-columns: 4 2fr;
+    grid-template-rows: 5 2fr;
+    grid-template-areas:
+                        "a1 b1 c1 d1"
+                        "a2 b2 c2 d2"    
+                        "a3 b3 c3 d3"    
+                        "a4 b4 c4 d4"    
+                        "a5 b5 C5 d5"   
+    ;
+}
+.a1, .b1, .c1, .d1{
+    text-align: center;
+    background-color: #3b5998;
+    color: white;
+    font-weight: bold;
+    height: 20px;
+}
+.h3Turno{
+    width: 100%;
+    text-align: center;
+}
+

@@ -1,0 +1,186 @@
+//   VARIABLES  //
+
+$azulifn: rgb(52, 97, 180);
+$azuloscuroifn: midnightblue;
+$blancoifn: white;
+$huesoifn: #f0f0f0;
+$grisifn:#ebe8f3;
+$azulfb: #3b5998;
+$rosaig: #c32aa3;
+$azullk: #0e76a8;
+$rojoifn:rgb(216, 55, 55);
+$fontifn1:  'Roboto', sans-serif;
+$fontifn2:  'Poppins', sans-serif;
+$ancho: 6rem;
+
+//   CONDICIONAL //
+
+@mixin botones($color){
+    background:$color;
+    @if $color == $azulifn{
+        color: $blancoifn;
+    }
+        @else if $color == $blancoifn{
+            color: $azulifn
+        }
+            @else{
+                color: $azuloscuroifn
+            }
+                
+}
+
+
+@mixin botones($color){
+    background:$color;
+    @if $color == $azulifn{
+        color: $blancoifn;
+    }
+        @else if $color == $blancoifn{
+            color: $azulifn
+        }
+            @else{
+                color: $azuloscuroifn
+            }
+                
+}
+
+
+//   BUCLE FOR   //
+
+@for $i from 1 through 5{
+    .caja-#{$i}{
+        background-color: darken(#d9e0f3, $i * 8)
+    }
+}
+
+
+
+//  LINEAMIENTOS GENERALES  //
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $fontifn1;
+    
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 { 
+    font-family:$fontifn2;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, $azulifn, rgb(75, 116, 194));
+    height: 5em;
+    padding-top: 2em;
+    color:$blancoifn;
+    margin-bottom: 2em;
+}
+h2{
+    font-family:$fontifn2;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color:$azulifn;
+    height: 1.8em;
+    margin: 1em ;
+}
+h3{
+    font-size: 1.2rem;
+    font-family:$fontifn2;
+    color:$azuloscuroifn;
+    margin: 1rem;
+}   
+
+h4{
+    font-size: 1rem;
+    font-family:$fontifn2;
+}   
+.botonIfn{
+    @include botones($azulifn);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    height: auto;
+    pad: 5px;
+    border-radius: 2px;
+    z-index: 1;
+    &:hover{
+        @include botones($blancoifn);
+        
+    }
+
+}
+
+.botonIfn--modificado{
+    background-color: $huesoifn;
+    color: $azulifn;
+    &:hover{
+        background-color: $azulifn;
+        color: $huesoifn;
+    }
+    &:enabled{
+        border: none;
+        box-shadow: none;
+    }
+    &:checked, :active{
+        background-color: $azulifn;
+        color: $huesoifn;
+    }
+    
+}
+
+
+// IMAGENES CON ZOOM //
+figure{
+    overflow: hidden;
+}
+
+.figure{
+    overflow: hidden;
+}
+
+.imgZoom{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.3);
+    }
+}
+
+// IMAGENES CON OPACIDAD //
+
+.imgOpacity{
+    opacity: 0.8;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+// IMAGENES CON TEXTO FLOAT //
+
+.imgFloatRight{
+    float: right;
+    margin-left: 1rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.imgFloatLeft{
+    float: left;
+    margin-right: 1rem;
+    justify-self: center;
+    align-self: center;
+}
+
