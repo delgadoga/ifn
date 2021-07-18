@@ -1,6 +1,7 @@
 //   VARIABLES  //
 
 $azulifn: rgb(52, 97, 180);
+$celesteinf:  rgb(107, 139, 199);
 $azuloscuroifn: midnightblue;
 $blancoifn: white;
 $huesoifn: #f0f0f0;
@@ -28,22 +29,6 @@ $ancho: 6rem;
             }
                 
 }
-
-
-@mixin botones($color){
-    background:$color;
-    @if $color == $azulifn{
-        color: $blancoifn;
-    }
-        @else if $color == $blancoifn{
-            color: $azulifn
-        }
-            @else{
-                color: $azuloscuroifn
-            }
-                
-}
-
 
 //   BUCLE FOR   //
 
@@ -111,14 +96,20 @@ h4{
     text-align: center;
     font-weight: 500;
     text-decoration: none;
-    border: none;
     height: auto;
     pad: 5px;
     border-radius: 2px;
     z-index: 1;
     &:hover{
         @include botones($blancoifn);
-        
+    }
+    &:enabled{
+            border: none;
+            box-shadow: none;
+    }
+    &:checked, :active{
+        background-color: $azulifn;
+        color: $huesoifn;    
     }
 
 }
