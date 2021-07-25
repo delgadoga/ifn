@@ -564,6 +564,9 @@ figure {
     opacity: 1;
     transform: scale(1.3); }
 
+.fade, .show {
+  margin-left: 0; }
+
 .h1Articulo {
   grid-area: h1Articulo;
   margin-top: 13px; }
