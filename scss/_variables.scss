@@ -226,3 +226,39 @@ figure{
     align-self: center;
     border-radius: 2px;
 }
+
+
+/* PAGINA 404*/
+.body404{
+    background-color: $azuloscuroifn;
+}
+.h1404{
+    background-color: $azuloscuroifn;
+}
+.h2404{
+    color: $blancoifn;
+    .a404{
+        background-color: $huesoifn;
+        color:$azulifn;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 3px 10px;
+        border-radius: 2px;
+        &:hover{
+            background-color: $grismedio;
+            color: $azuloscuroifn;
+        }
+    }
+}
+.h3404{
+    color: $blancoifn;
+    text-align: center;
+    text-transform: none;
+    margin-top: 2rem;
+}
+.h4404{
+    font-size: 50px;
+    color: $blancoifn;
+    text-align: center;
+    margin-top: 2rem;
+}
