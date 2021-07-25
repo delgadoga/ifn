@@ -1,3 +1,11 @@
+.h1Articulo{
+    grid-area: h1Articulo;
+    margin-top: 13px;
+}
+.articulo{
+    grid-area: articulo;
+}
+
 /*    NUESTRA HISTORIA    */
 
 .articulo{
@@ -21,36 +29,40 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     grid-template-areas:     
                         "Header"
-                        "h1Articulo"
+                        "historia1"
+                        "h1Historia"
                         "articulo"
                         "gFooter1"
                         "Footer"
 
 }
+.historia1{
+    grid-area: historia1;
+}
+.h1Historia{
+    grid-area: h1Historia;
+    margin-top: 13px;
+}
 
 
 /*    STAFF    */
-
 
 .cardStaffDir{
     width: ($ancho*3)-2;
     margin: 1rem;
 }
-
 .cardStaff{
     width: ($ancho*2);
     margin: 1rem;
-    height: 25rem;
+    height: auto;
 }
-
 .h4Staff{
     text-align: center;
     margin-bottom: 2rem;
 }
-
 .grupoStaff{
     display: flex;
     flex-direction: row;
@@ -58,25 +70,26 @@
     text-align: center;
 }
 
-
 /*  NUESTRAS INSTALACIONES */ 
 
 .gInstalaciones{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     grid-template-areas:     
                         "Header"
+                        "ins1"
                         "h1Articulo"
                         "articulo"
                         "gFooter1"
                         "Footer"
-
+}
+.ins1{
+    grid-area: ins1;
 }
 
 /*    BLOG   */
-
 .blog{
     display: flex;
     flex-direction: row;
@@ -85,5 +98,22 @@
 .cardBlog{
     height: fit-content;
     margin: 2rem;
+    min-width: 400px;
+}
 
+.gblog{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:     
+                        "Header"
+                        "blog1"
+                        "h1Articulo"
+                        "articulo"
+                        "gFooter1"
+                        "Footer"
+}
+.blog1{
+    grid-area:blog1;
 }

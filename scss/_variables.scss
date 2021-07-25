@@ -5,7 +5,9 @@ $celesteinf:  rgb(107, 139, 199);
 $azuloscuroifn: midnightblue;
 $blancoifn: white;
 $huesoifn: #f0f0f0;
-$grisifn:#ebe8f3;
+$grisifn:#f8f9fa;
+$grismedio: #8a8a8b;
+$grisOscuro:#353542;
 $azulfb: #3b5998;
 $rosaig: #c32aa3;
 $azullk: #0e76a8;
@@ -14,12 +16,13 @@ $fontifn1:  'Roboto', sans-serif;
 $fontifn2:  'Poppins', sans-serif;
 $ancho: 6rem;
 
+
 //   CONDICIONAL //
 
 @mixin botones($color){
     background:$color;
     @if $color == $azulifn{
-        color: $blancoifn;
+        color: $grisifn;
     }
         @else if $color == $blancoifn{
             color: $azulifn
@@ -67,6 +70,7 @@ h1 {
     padding-top: 2em;
     color:$blancoifn;
     margin-bottom: 2em;
+    margin-top: 30px;
 }
 h2{
     font-family:$fontifn2;
@@ -76,19 +80,21 @@ h2{
     text-transform: uppercase;
     color:$azulifn;
     height: 1.8em;
-    margin: 1em ;
 }
 h3{
     font-size: 1.2rem;
     font-family:$fontifn2;
     color:$azuloscuroifn;
-    margin: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }   
 
 h4{
     font-size: 1rem;
     font-family:$fontifn2;
 }   
+
 .botonIfn{
     @include botones($azulifn);
     text-transform: uppercase;
@@ -97,29 +103,41 @@ h4{
     font-weight: 500;
     text-decoration: none;
     height: auto;
-    pad: 5px;
+    width: max-content;
+    padding: 8px;
     border-radius: 2px;
+    border-style: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     z-index: 1;
     &:hover{
-        @include botones($blancoifn);
+        @include botones($grisifn);
+        height: fit-content;
+        color: $azulifn;
+        box-shadow: 1.5px 1.5px 1px 1px;
     }
-    &:enabled{
-            border: none;
-            box-shadow: none;
+    &::before {
+        height: 100%;
+        width: 0%;
+        background-color: $grisifn;
+        color: $azulifn;
+        left: 0;
+        top: 0;
+        position: absolute;
+        content: "";
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        z-index: -1;
     }
-    &:checked, :active{
-        background-color: $azulifn;
-        color: $huesoifn;    
-    }
-
 }
 
+
 .botonIfn--modificado{
-    background-color: $huesoifn;
+    background-color: $grisifn;
     color: $azulifn;
     &:hover{
         background-color: $azulifn;
-        color: $huesoifn;
+        color: $blancoifn;
     }
     &:enabled{
         border: none;
@@ -127,9 +145,41 @@ h4{
     }
     &:checked, :active{
         background-color: $azulifn;
-        color: $huesoifn;
+        color: $blancoifn;
     }
     
+}
+
+.botonIfn--modificado::before {
+    height: 100%;
+    width: 0%;
+    background-color: $azulifn;
+    color: $blancoifn;
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "";
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.botonIfn--modificado:hover::before {
+    width: 100%;
+}
+
+
+.botPaciente{
+    margin-top: 1rem;
+}
+.formPaciente{
+    .formPaciente__label{
+        width: 50%;
+        margin-left: 1%;
+    }
+    .formPaciente__conf{
+         margin-bottom: 1rem;
+    }
 }
 
 
@@ -166,6 +216,7 @@ figure{
     margin-left: 1rem;
     justify-self: center;
     align-self: center;
+    border-radius: 2px;
 }
 
 .imgFloatLeft{
@@ -173,5 +224,5 @@ figure{
     margin-right: 1rem;
     justify-self: center;
     align-self: center;
+    border-radius: 2px;
 }
-

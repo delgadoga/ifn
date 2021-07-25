@@ -55,16 +55,44 @@
                 </div>
             </div>
         </nav>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Cobertura Médica</li>
-            </ol>
-        </nav>
     </header>
+    <div class="cobertura1">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Cobertura Médica</li>
+        </ol>
+    </nav>
+    <p class="botPaciente">
+        <button class="botonIfn botonIfn__a" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Acceso Pacientes
+        </button>
+    </p>
+    <form class="collapse formPaciente" id="collapseExample">
+        <div class="mb-3 formPaciente__label">
+          <label for="exampleInputEmail1" class="form-label ">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3 formPaciente__label">
+          <label for="exampleInputPassword1" class="form-label ">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check formPaciente__label">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Guardar Usuario</label>
+        </div>
+        <button type="submit" class="botonIfn botonIfn__a formPaciente__conf">Confirmar</button>
+    </form>
+    </div>
         <!-- ENCABEZADO HOME-->
-    <h1>Cobertura y Precios</h1>
+    <h1 class="coberturah1">Cobertura y Precios</h1>
         <!-- Aqui comienza la Sección 1-->
+        <main class="mainCobertura">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="botonIfn" type="submit">Buscar</button>
+          </form>
+        <h2>OBRAS SOCIALES Y PREPAGAS</h2>
         <ul class="ulCobertura">
             <li class="liCobertura">A.C.A (Automóvil Club Argentino)</li>
             <li class="liCobertura">ACCORD SALUD</li>
@@ -118,6 +146,14 @@
             <li class="liCobertura">Swiss Medical S.A</li>
             <li class="liCobertura">Visitar</li>  
     </ul>
+    <h2>PRECIOS PARA PARTICULARES</h2>
+    <ul class="ulCobertura">
+        <li class="liCobertura">Consulta con Médicos del Equipo : $2.800,-</li>
+        <li class="liCobertura">Polisomnografía Nocturna con Oximetría : $19.500,-</li>
+        <li class="liCobertura">Mapeo Cerebral de Rutina : $5.000,-</li>
+        <li class="liCobertura">Polisomnografía Nocturna Sin Oximetría : $18.000,-</li>
+        <li class="liCobertura">Test Neurocognitivo de Barcelona : $11.000,-</li>
+    </main>
     <!-- RRSS II-->   
     <div class="gFooter1 rrssf">
         <ul class="rrssf__ul">
@@ -129,10 +165,10 @@
     <footer class="Footer">
         <div class="mdsRow">
             <div class="mds">
-                <a class="mds mds__a" href="../index.html"><h3 class="mds">Inicio</h3></a>
+                <a class="mds mds__a" href="../index.html"><h3 class="mds mds__h3">Inicio</h3></a>
             </div>
             <div class="mds">
-                <h3 class="mds">Acerca de</h3>
+                <h3 class="mds mds__h32">Acerca de</h3>
                 <ul class="mds mds__ul">
                     <li class="mds mds__li"><a class="mds mds__a" href="nuestra_historia.html" >Nuestra Historia</a></li>
                     <li class="mds mds__li"><a class="mds mds__a" href="equipo_medico.html">Equipo Médico</a></li>
@@ -141,7 +177,7 @@
                 </ul>
             </div>
             <div class="mds">
-                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds">Problemas de Sueño</h3></a>
+                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds mds__h3">Problemas de Sueño</h3></a>
                 <ul class="mds mds__ul">
                     <li class="mds mds__li"><a class="mds mds__a" href="problemas_de_sueno.html#insomnio" >Insomnio</a></li>
                     <li class="mds mds__li"><a class="mds mds__a" href="problemas_de_sueno.html#apneas" >Apneas</a></li>
@@ -149,16 +185,18 @@
                 </ul>
             </div>
             <div class="mds">
-                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds">Talleres y Cursos</h3></a>
+                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds mds__h3">Talleres Cursos</h3></a>
                 <ul class="mds mds__ul">
                     <li class="mds mds__li"><a class="mds mds__a" href="talleres_y_cursos.html#talleres" >Talleres Abiertos</a></li>
                     <li class="mds mds__li"><a class="mds mds__a" href="talleres_y_cursos.html#cursos" >Cursos para Profesionales</a></li>      
                 </ul>
             </div>
-            <div class="mdsRow">
-                <a class="mds mds__a" href="cobertura_medica.html"><h3 class="mds">Cobertura Médica</h3></a>
-                <a class="mds mds__a" href="pedir_turno.html"><h3 class="mds">Pedir un Turno</h3></a>
-            </div> 
+            <div class="mds">
+                <a class="mds mds__a" href="cobertura_medica.html"><h3 class="mds mds__h3">Cobertura Médica</h3></a>
+            </div>
+            <div class="mds">
+                <a class="mds mds__a" href="pedir_turno.html"><h3 class="mds mds__h3">Pedir Turno</h3></a>
+            </div>
         </div>
         <hr>
         Hecho con 🤍 BGD</footer>

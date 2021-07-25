@@ -2,11 +2,21 @@
     background-color: $grisifn;
     border-radius: 5px;
     width: 80%;
+    min-width: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     margin-left: 10%;
     padding:1rem;
     &--modificado{
         background-color: $blancoifn;
     }
+}
+.imgProb{
+    position: relative;
+    margin: 1rem;
+}
+.h1problemas{
+    margin-top: 13px;
 }
 .gProblemas{
     width: 100%;
@@ -15,9 +25,15 @@
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
                     "Header"
-                    "gProblemas"
                     "sProblemas"
+                    "mProblemas"
                     "gFooter1"
                     "Footer"
     ;
+}
+.sProblemas{
+    grid-area: sProblemas;
+}
+.gProblemas{
+    grid-area: gProblemas;
 }

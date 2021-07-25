@@ -19,7 +19,7 @@
     <!-- Animate,-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body class="gHistoria">
+<body class="gBlog">
     <header class="Header">
         <div class="rrss">
             <ul class="rrss__ul">
@@ -53,17 +53,39 @@
                 </div>
             </div>
         </nav>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Acerca De - Blog del Director</li>
-            </ol>
-        </nav>
     </header>
+    <div class="blog1">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Acerca De - Blog del Director</li>
+        </ol>
+    </nav>
+    <p class="botPaciente">
+        <button class="botonIfn botonIfn__a" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Acceso Pacientes
+        </button>
+    </p>
+    <form class="collapse formPaciente" id="collapseExample">
+        <div class="mb-3 formPaciente__label">
+          <label for="exampleInputEmail1" class="form-label ">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3 formPaciente__label">
+          <label for="exampleInputPassword1" class="form-label ">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check formPaciente__label">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Guardar Usuario</label>
+        </div>
+        <button type="submit" class="botonIfn botonIfn__a formPaciente__conf">Confirmar</button>
+    </form>
+    </div>
     <h1 class="h1articulo">Blog del Director</h1>
     <section class="blog">
         <div class="blog2">
-            <div class="card mb-3 cardBlog">
+            <div class="card mb-3 cardBlog blogA">
                 <img src="..//img/gentenecesaria.jpg" class="card-img-top" alt="manos de varias personas unidas como equipo">
                 <div class="card-body">
                     <h5 class="card-title">GENTE NECESARIA</h5>
@@ -75,7 +97,7 @@
                     <p class="card-text"><small class="text-muted">HAMLET LIMA QUINTANA</small></p>
                 </div>
             </div>
-            <div class="card mb-3 cardBlog">
+            <div class="card mb-3 cardBlog blogB">
                 <img src="..//img/librosdehistoria.jpg" class="card-img-top" alt="libros de historia">
                 <div class="card-body">
                     <h5 class="card-title">60 AÑOS CUIDANDO TU DESCANSO</h5>
@@ -86,8 +108,7 @@
                 </div>
             </div>
         </div>
-   
-           <div class="card mb-3 cardBlog">
+            <div class="card mb-3 cardBlog blogC">
             <img src="../img/morirmuyvivos.jpg" class="card-img-top" alt="persona llegando a la cima de una montaña">
             <div class="card-body">
                 <h5 class="card-title">MORIR MUY VIVOS</h5>
@@ -178,10 +199,10 @@
     <footer class="Footer">
         <div class="mdsRow">
             <div class="mds">
-                <a class="mds mds__a" href="../index.html"><h3 class="mds">Inicio</h3></a>
+                <a class="mds mds__a" href="../index.html"><h3 class="mds mds__h3">Inicio</h3></a>
             </div>
             <div class="mds">
-                <h3 class="mds">Acerca de</h3>
+                <h3 class="mds mds__h32">Acerca de</h3>
                 <ul class="mds mds__ul">
                     <li class="mds mds__li"><a class="mds mds__a" href="nuestra_historia.html" >Nuestra Historia</a></li>
                     <li class="mds mds__li"><a class="mds mds__a" href="equipo_medico.html">Equipo Médico</a></li>
@@ -190,7 +211,7 @@
                 </ul>
             </div>
             <div class="mds">
-                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds">Problemas de Sueño</h3></a>
+                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds mds__h3">Problemas de Sueño</h3></a>
                 <ul class="mds mds__ul">
                     <li class="mds mds__li"><a class="mds mds__a" href="problemas_de_sueno.html#insomnio" >Insomnio</a></li>
                     <li class="mds mds__li"><a class="mds mds__a" href="problemas_de_sueno.html#apneas" >Apneas</a></li>
@@ -198,16 +219,18 @@
                 </ul>
             </div>
             <div class="mds">
-                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds">Talleres y Cursos</h3></a>
+                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds mds__h3">Talleres Cursos</h3></a>
                 <ul class="mds mds__ul">
                     <li class="mds mds__li"><a class="mds mds__a" href="talleres_y_cursos.html#talleres" >Talleres Abiertos</a></li>
                     <li class="mds mds__li"><a class="mds mds__a" href="talleres_y_cursos.html#cursos" >Cursos para Profesionales</a></li>      
                 </ul>
             </div>
-            <div class="mdsRow">
-                <a class="mds mds__a" href="cobertura_medica.html"><h3 class="mds">Cobertura Médica</h3></a>
-                <a class="mds mds__a" href="pedir_turno.html"><h3 class="mds">Pedir un Turno</h3></a>
-            </div> 
+            <div class="mds">
+                <a class="mds mds__a" href="cobertura_medica.html"><h3 class="mds mds__h3">Cobertura Médica</h3></a>
+            </div>
+            <div class="mds">
+                <a class="mds mds__a" href="pedir_turno.html"><h3 class="mds mds__h3">Pedir Turno</h3></a>
+            </div>
         </div>
         <hr>
         Hecho con 🤍 BGD</footer>

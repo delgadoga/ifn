@@ -35,7 +35,8 @@ h1 {
   height: 5em;
   padding-top: 2em;
   color: white;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  margin-top: 30px; }
 
 h2 {
   font-family: "Poppins", sans-serif;
@@ -44,14 +45,15 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   color: #3461b4;
-  height: 1.8em;
-  margin: 1em; }
+  height: 1.8em; }
 
 h3 {
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
   color: midnightblue;
-  margin: 1rem; }
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 10px; }
 
 h4 {
   font-size: 1rem;
@@ -59,38 +61,77 @@ h4 {
 
 .botonIfn {
   background: #3461b4;
-  color: white;
+  color: #f8f9fa;
   text-transform: uppercase;
   font-size: 0.9rem;
   text-align: center;
   font-weight: 500;
   text-decoration: none;
   height: auto;
-  pad: 5px;
+  width: max-content;
+  padding: 8px;
   border-radius: 2px;
+  border-style: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 1; }
   .botonIfn:hover {
-    background: white;
-    color: #3461b4; }
-  .botonIfn:enabled {
-    border: none;
-    box-shadow: none; }
-  .botonIfn:checked, .botonIfn :active {
-    background-color: #3461b4;
-    color: #f0f0f0; }
+    background: #f8f9fa;
+    color: midnightblue;
+    height: fit-content;
+    color: #3461b4;
+    box-shadow: 1.5px 1.5px 1px 1px; }
+  .botonIfn::before {
+    height: 100%;
+    width: 0%;
+    background-color: #f8f9fa;
+    color: #3461b4;
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "";
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: -1; }
 
 .botonIfn--modificado {
-  background-color: #f0f0f0;
+  background-color: #f8f9fa;
   color: #3461b4; }
   .botonIfn--modificado:hover {
     background-color: #3461b4;
-    color: #f0f0f0; }
+    color: white; }
   .botonIfn--modificado:enabled {
     border: none;
     box-shadow: none; }
   .botonIfn--modificado:checked, .botonIfn--modificado :active {
     background-color: #3461b4;
-    color: #f0f0f0; }
+    color: white; }
+
+.botonIfn--modificado::before {
+  height: 100%;
+  width: 0%;
+  background-color: #3461b4;
+  color: white;
+  left: 0;
+  top: 0;
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  z-index: -1; }
+
+.botonIfn--modificado:hover::before {
+  width: 100%; }
+
+.botPaciente {
+  margin-top: 1rem; }
+
+.formPaciente .formPaciente__label {
+  width: 50%;
+  margin-left: 1%; }
+
+.formPaciente .formPaciente__conf {
+  margin-bottom: 1rem; }
 
 figure {
   overflow: hidden; }
@@ -113,13 +154,15 @@ figure {
   float: right;
   margin-left: 1rem;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  border-radius: 2px; }
 
 .imgFloatLeft {
   float: left;
   margin-right: 1rem;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  border-radius: 2px; }
 
 .Header {
   grid-area: Header; }
@@ -131,7 +174,8 @@ figure {
   position: absolute;
   z-index: 2;
   margin-top: 1.25em;
-  margin-left: 85%; }
+  margin-left: 85%;
+  z-index: 4; }
   .rrss .rrss__ul {
     display: flex;
     flex-direction: row;
@@ -167,8 +211,15 @@ figure {
           transform: translate(0, -5px);
           transition: 0.3s ease-in-out; }
 
+.dropdown-item:active {
+  background-color: #3461b4; }
+
+.navbar {
+  z-index: 2; }
+
 .gFooter1 {
-  grid-area: gFooter1; }
+  grid-area: gFooter1;
+  margin-top: 1rem; }
 
 .rrssf {
   display: flex;
@@ -219,21 +270,30 @@ figure {
   color: white;
   text-align: center;
   font-size: 0.8rem;
-  padding: 0.3em; }
+  padding: 0.3em;
+  width: 100%; }
 
 .mds {
   color: white;
-  text-decoration: none; }
-
-.mds__ul {
-  padding: 0;
-  list-style-type: none; }
-
-.mds__li {
-  list-style-type: none; }
-
-.mds__a:hover {
-  color: #3461b4; }
+  text-decoration: none;
+  height: max-content;
+  width: 10rem;
+  align-content: center; }
+  .mds .mds__ul {
+    list-style-type: none;
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0; }
+  .mds .mds__li {
+    list-style-type: none; }
+  .mds .mds__a:hover {
+    color: #3461b4; }
+  .mds .mds__h3 {
+    color: white; }
+    .mds .mds__h3:hover {
+      color: #3461b4; }
+  .mds .mds__h32 {
+    color: white; }
 
 .mdsRow {
   display: flex;
@@ -251,13 +311,6 @@ figure {
 
 .home {
   grid-area: gPrincipalHome; }
-  .home .home__botPaciente {
-    margin-top: 1rem; }
-  .home .home__formPaciente .home__formPaciente__label {
-    width: 50%;
-    margin-left: 1%; }
-  .home .home__formPaciente .home__formPaciente__conf {
-    margin-bottom: 1rem; }
   .home .home__banner {
     background-image: url(../img/doc2ok.png);
     width: 100%;
@@ -268,7 +321,7 @@ figure {
       background-color: transparent;
       font-size: 2rem;
       width: 25%;
-      margin-top: 1rem;
+      margin-top: 30px;
       margin-left: 2rem;
       height: max-content;
       color: cornsilk;
@@ -280,13 +333,13 @@ figure {
     .home .home__banner .home__banner__turno {
       margin-top: 8rem;
       margin-left: 65%;
-      font-size: 0.9rem;
       display: flex;
       position: absolute;
+      font-size: 0.9rem;
       text-align: center;
       font-weight: 500;
       background-color: #3461b4;
-      color: #fff;
+      color: white;
       border: none;
       -webkit-transition: 0.5s;
       transition: 0.5s;
@@ -296,11 +349,11 @@ figure {
         text-transform: uppercase;
         text-align: center;
         text-decoration: none;
-        color: #fff;
+        color: white;
         padding: 15px 30px; }
         .home .home__banner .home__banner__turno .home__banner__turno__a:hover {
           color: #3461b4;
-          font-weight: 600; }
+          font-weight: 500; }
     .home .home__banner .home__banner__turno::before {
       height: 100%;
       width: 0%;
@@ -317,8 +370,8 @@ figure {
       width: 100%; }
     .home .home__banner .home__banner__protocolo {
       position: absolute;
-      margin-left: 9.8%;
-      margin-top: 17%; }
+      margin-left: 69%;
+      margin-top: 200px; }
   .home .home__contacto {
     text-align: center;
     padding: 0.5rem;
@@ -344,8 +397,8 @@ figure {
 .gEleginos {
   grid-area: gEleginos;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-top: 4rem;
+  margin-bottom: 3rem; }
 
 .gEleginos1 {
   grid-area: gEleginos1;
@@ -389,6 +442,9 @@ figure {
   margin: 2rem 0 2rem 0;
   border-radius: 5px; }
 
+.fotoAvances {
+  width: 100%; }
+
 .gCardAvances {
   grid-area: gAvancesC;
   justify-self: center;
@@ -409,7 +465,9 @@ figure {
     color: cornsilk; }
 
 .gNeuroT {
-  grid-area: gNeuroT; }
+  grid-area: gNeuroT;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .gNeuro1 {
   grid-area: gNeuro1;
@@ -417,7 +475,8 @@ figure {
   justify-self: flex-end;
   align-self: center;
   margin: 2rem 0 2rem 0;
-  width: 18rem; }
+  width: 18rem;
+  margin-bottom: 4rem; }
 
 .gNeuro2 {
   grid-area: gNeuro2;
@@ -425,7 +484,8 @@ figure {
   justify-self: center;
   align-self: center;
   margin: 2rem 0 2rem 0;
-  width: 18rem; }
+  width: 18rem;
+  margin-bottom: 4rem; }
 
 .gNeuro3 {
   grid-area: gNeuro3;
@@ -433,7 +493,8 @@ figure {
   justify-self: self-start;
   align-self: center;
   margin: 2rem 0 2rem 0;
-  width: 18rem; }
+  width: 18rem;
+  margin-bottom: 4rem; }
 
 .gAccidentesC {
   grid-area: gAccidentesC;
@@ -465,7 +526,9 @@ figure {
 
 .gMapaT {
   grid-area: gMapaT;
-  text-align: center; }
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .gMapaC {
   grid-area: gMapaC;
@@ -501,6 +564,13 @@ figure {
     opacity: 1;
     transform: scale(1.3); }
 
+.h1Articulo {
+  grid-area: h1Articulo;
+  margin-top: 13px; }
+
+.articulo {
+  grid-area: articulo; }
+
 /*    NUESTRA HISTORIA    */
 .articulo {
   width: 80%;
@@ -520,8 +590,15 @@ figure {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
-  grid-template-areas: "Header" "h1Articulo" "articulo" "gFooter1" "Footer"; }
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "Header" "historia1" "h1Historia" "articulo" "gFooter1" "Footer"; }
+
+.historia1 {
+  grid-area: historia1; }
+
+.h1Historia {
+  grid-area: h1Historia;
+  margin-top: 13px; }
 
 /*    STAFF    */
 .cardStaffDir {
@@ -531,7 +608,7 @@ figure {
 .cardStaff {
   width: 12rem;
   margin: 1rem;
-  height: 25rem; }
+  height: auto; }
 
 .h4Staff {
   text-align: center;
@@ -548,8 +625,11 @@ figure {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
-  grid-template-areas: "Header" "h1Articulo" "articulo" "gFooter1" "Footer"; }
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "Header" "ins1" "h1Articulo" "articulo" "gFooter1" "Footer"; }
+
+.ins1 {
+  grid-area: ins1; }
 
 /*    BLOG   */
 .blog {
@@ -559,7 +639,18 @@ figure {
 
 .cardBlog {
   height: fit-content;
-  margin: 2rem; }
+  margin: 2rem;
+  min-width: 400px; }
+
+.gblog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "Header" "blog1" "h1Articulo" "articulo" "gFooter1" "Footer"; }
+
+.blog1 {
+  grid-area: blog1; }
 
 /*--------------------------------------------- ESTUDIOS ----------------------------------------- */
 .tablaEstudios {
@@ -569,24 +660,42 @@ figure {
   justify-content: center; }
 
 .divProblemas {
-  background-color: #ebe8f3;
+  background-color: #f8f9fa;
   border-radius: 5px;
   width: 80%;
+  min-width: 300px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: 10%;
   padding: 1rem; }
   .divProblemas--modificado {
     background-color: white; }
+
+.imgProb {
+  position: relative;
+  margin: 1rem; }
+
+.h1problemas {
+  margin-top: 13px; }
 
 .gProblemas {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "Header" "gProblemas" "sProblemas" "gFooter1" "Footer"; }
+  grid-template-areas: "Header" "sProblemas" "mProblemas" "gFooter1" "Footer"; }
+
+.sProblemas {
+  grid-area: sProblemas; }
+
+.gProblemas {
+  grid-area: gProblemas; }
 
 /*------------------------------------------ COBERTURA MEDICA ------------------------------------ */
 .ulCobertura {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .liCobertura {
   margin-left: 3rem;
@@ -597,16 +706,39 @@ figure {
   position: relative;
   font-size: 14px; }
 
+.d-flex {
+  width: 88%;
+  margin-left: 6%;
+  margin-bottom: 3rem;
+  grid-area: d-flex; }
+
+.cobertura1 {
+  grid-area: cobertura1; }
+
+.coberturah1 {
+  grid-area: coberturah1; }
+
+.gcobertura {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "Header" "cobertura1" "coberturah1" "mainCobertura" "gFooter1" "Footer"; }
+
 /*----------------------------------------------- TALLERES -------------------------------------- */
 .gTalleres {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(15, auto);
-  grid-template-areas: "Header Header" "gtalleresPrincipal gtalleresPrincipal" "gTalleresOpciones gTalleresOpciones" "gTalleresVideoT gTalleresVideoT" "gTalleresVideo gTalleresVideo" "gTalleresAbiertos gTalleresAbiertos" "gTalleresA1 gTalleresA1Card" "gTalleresA2 gTalleresA2Card" "gCursos gCursos" "gCursos1Card gCursos1" "gCursos2Card gCursos2" "gTalleresCancionT gTalleresCancionT" "gTalleresCancion gTalleresCancion" "gFooter1 gFooter1" "Footer Footer"; }
+  grid-template-rows: repeat(16, auto);
+  grid-template-areas: "Header Header" "gtyc gtyc" "gtalleresPrincipal gtalleresPrincipal" "gTalleresOpciones gTalleresOpciones" "gTalleresVideoT gTalleresVideoT" "gTalleresVideo gTalleresVideo" "gTalleresAbiertos gTalleresAbiertos" "cardt1 cardt1" "cardt2 cardt2" "gCursos gCursos" "cardt3 cardt3" "cardt4 cardt4" "gTalleresCancionT gTalleresCancionT" "gTalleresCancion gTalleresCancion" "gFooter1 gFooter1" "Footer Footer"; }
+
+.gtyc {
+  grid-area: gtyc; }
 
 .gTalleresPrincipal {
-  grid-area: gtalleresPrincipal; }
+  grid-area: gtalleresPrincipal;
+  margin-top: 13px; }
 
 .gTalleresOpciones {
   grid-area: gTalleresOpciones;
@@ -625,60 +757,20 @@ figure {
 .gTalleresAbiertos {
   grid-area: gTalleresAbiertos; }
 
-.gTalleresA1 {
-  grid-area: gTalleresA1;
-  justify-self: flex-end;
-  margin: 2em; }
+.cardt1 {
+  grid-area: cardt1; }
 
-.gTalleresA1Card {
-  grid-area: gTalleresA1Card;
-  justify-self: flex-start;
-  align-self: center;
-  margin: 2em;
-  width: 50%;
-  text-align: center; }
-
-.gTalleresA2 {
-  grid-area: gTalleresA2;
-  justify-self: flex-end;
-  margin: 2em; }
-
-.gTalleresA2Card {
-  grid-area: gTalleresA2Card;
-  justify-self: flex-start;
-  align-self: center;
-  margin: 2em;
-  width: 50%;
-  text-align: center; }
+.cardt2 {
+  grid-area: cardt2; }
 
 .gCursos {
   grid-area: gCursos; }
 
-.gCursos1Card {
-  grid-area: gCursos1Card;
-  justify-self: flex-end;
-  align-self: center;
-  margin: 2em;
-  width: 50%;
-  text-align: center; }
+.cardt3 {
+  grid-area: cardt3; }
 
-.gCursos1 {
-  grid-area: gCursos1;
-  justify-self: flex-start;
-  margin: 2em; }
-
-.gCursos2Card {
-  grid-area: gCursos2Card;
-  justify-self: flex-end;
-  align-self: center;
-  margin: 2em;
-  width: 50%;
-  text-align: center; }
-
-.gCursos2 {
-  grid-area: gCursos2;
-  justify-self: flex-start;
-  margin: 2em; }
+.cardt4 {
+  grid-area: cardt4; }
 
 .gTalleresCancionT {
   grid-area: gTalleresCancionT; }
@@ -688,32 +780,36 @@ figure {
   justify-self: center;
   margin: 2em; }
 
-.suenoyninos, .suenoyproductividad, .curso1, .curso2 {
+.curso1, .curso2 {
   width: 22em; }
 
-.divTalleres {
-  width: 10rem;
-  text-align: center;
-  justify-self: flex-end;
-  background-color: cornflowerblue;
-  color: white;
-  margin: 2rem;
-  padding: 1em;
-  border-radius: 0.3em; }
-
-.divCursos {
-  width: 10rem;
-  text-align: center;
-  justify-self: flex-end;
-  background-color: cornflowerblue;
-  margin: 2rem;
-  padding: 1em 0.1em 1em 0.1em;
-  border-radius: 0.3em; }
+.talleres {
+  background-color: #f8f9fa; }
 
 .aTalleres, .aCursos {
-  text-decoration: none;
-  text-align: center;
-  color: white; }
+  margin-bottom: 3rem; }
+
+/*     prueba  */
+.gTalleresCard {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 5rem;
+  margin: 2rem 3rem; }
+  .gTalleresCard .talleres__img {
+    width: 80%;
+    padding: 0 1rem;
+    margin: 0 2rem;
+    height: 18rem;
+    border-radius: 2px; }
+  .gTalleresCard .talleres__texto {
+    width: 80%; }
+
+.talleres__figure {
+  width: 80%;
+  height: auto; }
 
 /*------------------------------------------ PEDIR TURNO ----------------------------------------- */
 .categorias {
@@ -735,22 +831,25 @@ tr, td {
   border: 1px solid;
   margin: 0; }
 
+.pediTurn {
+  padding-bottom: 1rem; }
+
 .formulario {
   background-image: url(../img/femaledoctor.jpg);
   width: 100%; }
 
 .formularioTexto {
   margin-left: 40px;
-  margin-top: 40px; }
+  padding-top: 40px; }
 
 #formTurno {
-  text-decoration: none;
-  text-transform: none; }
+  text-decoration: none; }
 
 .divPadre {
   display: grid;
   width: 70%;
   margin-left: 15%;
+  margin-bottom: 2rem;
   text-align: center;
   align-items: center;
   border: solid #3b5998;
@@ -760,14 +859,18 @@ tr, td {
 
 .a1, .b1, .c1, .d1 {
   text-align: center;
-  background-color: #3b5998;
+  background-color: #3461b4;
   color: white;
-  font-weight: bold;
-  height: 20px; }
+  font-weight: 500px;
+  height: 40px;
+  align-self: center;
+  padding: 5px; }
 
 .h3Turno {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem; }
 
 /*-----------------------------------------          RESPONSIVE TABLET NOTEBOOK     -------------------------------------------------------  */
 /*--------------------------------------------            DESDE 992PX              -------------------------------------------------------  */
@@ -780,7 +883,16 @@ tr, td {
   .rrss {
     margin-top: 6.5em; }
   .gAvancesF {
-    transform: scale(0.8); } }
+    transform: scale(0.8); }
+  .cardBlog {
+    min-width: 400px; } }
+
+.gTalleresCard {
+  padding: 2rem 1rem;
+  margin: 2rem 1rem; }
+  .gTalleresCard .talleres__img {
+    padding: 0 0.5rem;
+    margin: 0 1rem; }
 
 /*-----------------------------------------          RESPONSIVE TABLET              -------------------------------------------------------  */
 /*--------------------------------------------           769 a 991 PX              -------------------------------------------------------  */
@@ -788,7 +900,7 @@ tr, td {
   nav {
     justify-content: center; }
   .rrss {
-    margin-top: 1.3em;
+    margin-top: 125px;
     margin-left: 50%; }
   .home .home__banner .home__banner__titulo {
     width: 45%;
@@ -796,7 +908,7 @@ tr, td {
   .home .home__banner .home__banner__protocolo {
     position: absolute;
     margin-left: 69%;
-    margin-top: 25%; }
+    margin-top: 200px; }
   .gEleginos1, .gEleginos2, .gEleginos3 {
     display: flex;
     flex-direction: column;
@@ -811,30 +923,47 @@ tr, td {
   .gAvancesF {
     transform: scale(0.7); }
   .gNeuro1, .gNeuro2, .gNeuro3 {
-    width: 17rem; } }
+    width: 17rem; }
+  .cardBlog {
+    min-width: 350px; }
+  .gTalleresCard {
+    padding: 2rem 0.3em;
+    margin: 2rem 0.3rem; }
+    .gTalleresCard .talleres__img {
+      padding: 0 0.5rem;
+      margin: 0 1rem; }
+  .formPaciente .formPaciente__label {
+    width: 70%; } }
 
 /*--------------------------------------------       RESPONSIVE TABLET       -------------------------------------------------------  */
-/*--------------------------------------------         DE 426 a 768 px       -------------------------------------------------------  */
-@media only screen and (min-width: 436px) and (max-width: 768px) {
+/*--------------------------------------------         DE 500 a 768 px       -------------------------------------------------------  */
+@media only screen and (min-width: 500px) and (max-width: 768px) {
   .imgLogo {
     width: 100%;
     margin-bottom: 0.6em; }
   .rrss {
-    margin-top: 2em;
-    margin-left: 58%; }
-  .home .home__banner .home__banner__titulo {
-    width: 45%;
-    margin-top: 1.9rem; }
-  .home .home__banner .home__banner__protocolo {
-    margin-left: 71%;
-    margin-top: 35%; }
-  .home .home__banner .home__banner__turno {
-    margin-left: 68%;
-    margin-top: 27%;
-    width: auto; }
-    .home .home__banner .home__banner__turno .home__banner__turno__a {
-      padding: 0.8rem;
-      text-align: center; }
+    margin-top: 140px;
+    margin-left: 70%;
+    display: flex; }
+  .home .home__banner {
+    display: flex;
+    flex-direction: row; }
+    .home .home__banner .home__banner__titulo {
+      width: 45%;
+      margin-top: 1.9rem;
+      min-width: 232px; }
+    .home .home__banner .home__banner__protocolo {
+      margin-left: 59%;
+      margin-top: 220px; }
+    .home .home__banner .home__banner__turno {
+      margin-left: 62%;
+      margin-top: 150px;
+      width: auto; }
+      .home .home__banner .home__banner__turno .home__banner__turno__a {
+        padding: 0.8rem;
+        text-align: center; }
+  .mdsRow {
+    display: none; }
   .Header {
     grid-area: "Header"; }
   .gEleginos1, .gEleginos2, .gEleginos3 {
@@ -868,33 +997,137 @@ tr, td {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(19, auto);
-    grid-template-areas: "Header" "gPrincipalHome" "gEleginos" "gEleginos1" "gEleginos2"  "gEleginos3" "gAvancesF" "gAvancesC" "gNeuroT" "gNeuro1" "gNeuro2" "gNeuro3" "gAccidentesC" "gAccidentesF" "gMapaT" "gMapaF"  "gMapaC" "gFooter1" "Footer"; } }
+    grid-template-areas: "Header" "gPrincipalHome" "gEleginos" "gEleginos1" "gEleginos2"  "gEleginos3" "gAvancesF" "gAvancesC" "gNeuroT" "gNeuro1" "gNeuro2" "gNeuro3" "gAccidentesC" "gAccidentesF" "gMapaT" "gMapaF"  "gMapaC" "gFooter1" "Footer"; }
+  .blog {
+    flex-direction: column; }
+  .gTalleresCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0.5rem;
+    margin: 1.5rem 0.5rem; }
+    .gTalleresCard .talleres__img {
+      width: 85%;
+      padding: 0 0.5rem;
+      margin: 0 0.5rem;
+      justify-self: center; }
+    .gTalleresCard .talleres__texto {
+      width: 85%;
+      padding: 0 1rem;
+      margin: 1.5rem 0.5rem 0 0.5rem; }
+  .articulo {
+    width: 70%;
+    margin-bottom: 4rem;
+    align-self: center;
+    justify-self: center;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column; }
+    .articulo__titulo {
+      margin-bottom: 1rem;
+      width: 100%; }
+    .articulo__img {
+      min-width: 380px;
+      margin-left: 0;
+      padding-left: 0;
+      position: relative;
+      align-self: center; }
+  .cardStaffDir {
+    margin: 0.5rem; }
+  .cardStaff {
+    margin: 0.3rem;
+    height: auto; }
+  .divProblemas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+    margin: 5%;
+    padding: 1rem; }
+  .imgFloatRight {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    align-self: center; }
+  .imgFloatLeft {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    align-self: center; }
+  .imgProb {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    align-self: center; }
+  .gTalleresVideo {
+    width: 85%;
+    height: 100%;
+    padding-bottom: 4rem;
+    position: relative; }
+  .divPadre {
+    display: none; }
+  .h3Turno {
+    display: none; }
+  .formulario {
+    background-image: none;
+    background-color: #8a8a8b;
+    width: 90%;
+    margin-left: 5%; }
+  .fturno {
+    margin: 10px;
+    font-size: 1.1rem; }
+  .elmotivo {
+    width: 90%; }
+  .formularioTexto {
+    text-align: center;
+    margin-left: 0; }
+  .formPaciente .formPaciente__label {
+    width: 90%; } }
 
 /*--------------------------------------------       RESPONSIVE MOBILE        -------------------------------------------------------  */
-/*--------------------------------------------         HASTA 425px            -------------------------------------------------------  */
-@media only screen and (max-width: 435px) {
+/*--------------------------------------------         HASTA 499px            -------------------------------------------------------  */
+@media only screen and (max-width: 499px) {
   .imgLogo {
     width: 100%;
+    height: auto;
     margin-bottom: 0.4em; }
+  .navbar-brand {
+    margin-right: 0; }
   .rrss {
-    margin-top: 5.2em;
-    margin-left: 40%; }
-  .home .home__banner .home__banner__titulo {
-    width: 100%;
-    margin-top: 1rem;
-    margin-left: 0; }
-  .home .home__banner .home__banner__protocolo {
-    margin-left: 25%;
-    margin-top: 77%; }
-  .home .home__banner .home__banner__turno {
-    margin-left: 20%;
-    margin-top: 60%;
-    width: auto; }
-    .home .home__banner .home__banner__turno .home__banner__turno__a {
-      padding: 0.8rem;
-      text-align: center; }
+    margin-top: 194px;
+    margin-left: 60%; }
+  .home .home__banner {
+    display: flex;
+    justify-content: center;
+    position: relative; }
+    .home .home__banner .home__banner__titulo {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 7rem;
+      padding-top: 0%;
+      font-size: 1.8rem;
+      max-width: 400px; }
+    .home .home__banner .home__banner__protocolo {
+      text-align: center;
+      margin-top: 245px;
+      margin-left: 0;
+      width: 15rem; }
+    .home .home__banner .home__banner__turno {
+      align-items: center;
+      margin-top: 180px;
+      margin-left: 0;
+      width: 15rem; }
+      .home .home__banner .home__banner__turno .home__banner__turno__a {
+        text-align: center;
+        width: 15rem; }
+  .modal-body {
+    font-size: smaller; }
   .Header {
-    grid-area: "Header"; }
+    grid-area: "Header";
+    height: 10em; }
+  .mdsRow {
+    display: none; }
   .gEleginos1, .gEleginos2, .gEleginos3 {
     display: flex;
     flex-direction: column;
@@ -918,12 +1151,118 @@ tr, td {
     transform: scale(0.6); }
   .gAccidentesC {
     margin-left: 0; }
+  .gMapaT {
+    margin-top: 0; }
   .whatsapp .iconWhatsapp {
     width: 4.1em;
-    left: 75%; }
+    left: 70%; }
   .gBodyHome {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(19, auto);
-    grid-template-areas: "Header" "gPrincipalHome" "gEleginos" "gEleginos1" "gEleginos2"  "gEleginos3" "gAvancesF" "gAvancesC" "gNeuroT" "gNeuro1" "gNeuro2" "gNeuro3" "gAccidentesC" "gAccidentesF" "gMapaT" "gMapaF"  "gMapaC" "gFooter1" "Footer"; } }
+    grid-template-areas: "Header" "gPrincipalHome" "gEleginos" "gEleginos1" "gEleginos2"  "gEleginos3" "gAvancesF" "gAvancesC" "gNeuroT" "gNeuro1" "gNeuro2" "gNeuro3" "gAccidentesC" "gAccidentesF" "gMapaT" "gMapaF"  "gMapaC" "gFooter1" "Footer"; }
+  .blog {
+    flex-direction: column; }
+  .cardBlog {
+    height: fit-content;
+    margin: 2rem;
+    min-width: 200px; }
+  .gTalleresCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0.2rem;
+    margin: 1.5rem 0.2rem; }
+    .gTalleresCard .talleres__img {
+      width: 90%;
+      padding: 0 0.2rem;
+      margin: 0 0.2rem;
+      justify-self: center; }
+    .gTalleresCard .talleres__texto {
+      width: 90%;
+      padding: 0 1rem;
+      margin: 1.5rem 0.5rem 0 0.5rem; }
+  .articulo {
+    margin-bottom: 4rem;
+    align-self: center;
+    justify-self: center;
+    margin-left: 0; }
+    .articulo__titulo {
+      margin-bottom: 1rem;
+      width: 100%; }
+    .articulo__img {
+      width: 100%;
+      margin-left: 0; }
+  .grupoStaff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; }
+  .cardStaffDir {
+    width: 80%;
+    margin: 1rem;
+    height: auto;
+    align-self: center; }
+  .cardStaff {
+    width: 80%;
+    margin: 1rem;
+    height: auto;
+    align-self: center; }
+  .h4Staff {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .divProblemas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+    margin: 5%;
+    padding: 1rem; }
+  .imgFloatRight {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    align-self: center; }
+  .imgFloatLeft {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    align-self: center; }
+  .imgProb {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    align-self: center; }
+  .gTalleresVideo {
+    width: 85%;
+    height: 85%;
+    padding-bottom: 2rem;
+    position: relative; }
+  .divPadre {
+    display: none; }
+  .h3Turno {
+    display: none; }
+  .formulario {
+    background-image: none;
+    background-color: #8a8a8b;
+    width: 90%;
+    margin-left: 5%; }
+  .fturno {
+    margin: 10px;
+    font-size: 1.1rem; }
+  .elmotivo {
+    width: 90%; }
+  .formularioTexto {
+    text-align: center;
+    margin-left: 0; }
+  .liCobertura {
+    width: 80%;
+    margin-left: 5%; }
+  .ulCobertura {
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%; }
+  .formPaciente .formPaciente__label {
+    width: 90%; } }

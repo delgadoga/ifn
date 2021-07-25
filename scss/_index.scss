@@ -30,19 +30,6 @@
 
 .home{
     grid-area: gPrincipalHome;
-    .home__botPaciente{
-        margin-top: 1rem;
-    }
-    .home__formPaciente{
-        .home__formPaciente__label{
-            width: 50%;
-            margin-left: 1%;
-        }
-        .home__formPaciente__conf{
-             margin-bottom: 1rem;
-        }
-
-    }
     .home__banner{
         background-image: url(../img/doc2ok.png);
         width: 100%;
@@ -53,7 +40,7 @@
             background-color: transparent;
             font-size: 2rem;
             width: 25%;
-            margin-top: 1rem;
+            margin-top: 30px;
             margin-left: 2rem;
             height: max-content;
             color: cornsilk;
@@ -66,13 +53,13 @@
         .home__banner__turno{
             margin-top: 8rem;
             margin-left: 65%;
-            font-size: 0.9rem;
             display: flex;
             position: absolute;
+            font-size: 0.9rem;
             text-align: center;
             font-weight: 500;
             background-color: $azulifn;
-            color: #fff;
+            color: $blancoifn;
             border: none;
             -webkit-transition: 0.5s;
             transition: 0.5s;
@@ -82,11 +69,11 @@
                 text-transform: uppercase;
                 text-align: center;
                 text-decoration: none;
-                color: #fff;
+                color: $blancoifn;
                 padding: 15px 30px;
                 &:hover{
                     color: $azulifn;
-                    font-weight: 600;
+                    font-weight: 500;
                 }        
             }
         }
@@ -108,8 +95,8 @@
         }
         .home__banner__protocolo{
             position: absolute;
-            margin-left: 9.8%;
-            margin-top: 17%;
+            margin-left: 69%;
+            margin-top: 200px;
         }
     }
     .home__contacto{
@@ -143,8 +130,8 @@
 .gEleginos{
     grid-area: gEleginos;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 .gEleginos1{
     @include alinear(gEleginos1,center,flex-end,center,2rem 0 2rem 0);
@@ -182,6 +169,10 @@
     border-radius: 5px;
 }
 
+.fotoAvances{
+    width: 100%;
+}
+
 .gCardAvances{
     grid-area: gAvancesC;
     justify-self: center;
@@ -205,18 +196,23 @@
 }
 .gNeuroT{
     grid-area: gNeuroT;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .gNeuro1{
     @include alinear(gNeuro1,center,flex-end,center,2rem 0 2rem 0);
     width: 18rem;
+    margin-bottom: 4rem;
 }
 .gNeuro2{
     @include alinear(gNeuro2,center,center,center,2rem 0 2rem 0);
     width: 18rem;
+    margin-bottom: 4rem;
 }
 .gNeuro3{
     @include alinear(gNeuro3,center,self-start,center,2rem 0 2rem 0);
     width: 18rem;
+    margin-bottom: 4rem;
 }
 
 .gAccidentesC{
@@ -247,6 +243,8 @@
 .gMapaT{
     grid-area: gMapaT;
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .gMapaC{
     @include alinear(gMapaC,center,center,center,2rem 0 2rem 0);

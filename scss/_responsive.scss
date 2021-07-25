@@ -16,6 +16,18 @@
     .gAvancesF{
         transform: scale(0.8);
     }
+    .cardBlog{
+        min-width: 400px;
+    }
+    
+}
+.gTalleresCard{
+    padding: 2rem 1rem;
+    margin: 2rem 1rem;
+    .talleres__img{
+        padding: 0 0.5rem;
+        margin: 0 1rem;
+    }
 }
 
 /*-----------------------------------------          RESPONSIVE TABLET              -------------------------------------------------------  */
@@ -26,7 +38,7 @@
         justify-content: center;
     }
     .rrss{
-        margin-top: 1.3em;
+        margin-top: 125px;
         margin-left: 50%;
     }
     .home .home__banner .home__banner__titulo {
@@ -36,7 +48,7 @@
     .home .home__banner .home__banner__protocolo {
         position: absolute;
         margin-left: 69%;
-        margin-top: 25%;
+        margin-top: 200px;
     }
     .gEleginos1, .gEleginos2, .gEleginos3{
         display: flex;
@@ -60,33 +72,53 @@
         width: 17rem;
         
     }
+    .cardBlog{
+        min-width: 350px;
+    }
+    .gTalleresCard{
+        padding: 2rem 0.3em;
+        margin: 2rem 0.3rem;
+        .talleres__img{
+            padding: 0 0.5rem;
+            margin: 0 1rem;
+        }
+    }
+    .formPaciente{
+        .formPaciente__label{
+            width: 70%;
+        }
+    }
 }
 
 /*--------------------------------------------       RESPONSIVE TABLET       -------------------------------------------------------  */
-/*--------------------------------------------         DE 426 a 768 px       -------------------------------------------------------  */
-@media only screen and (min-width:436px) and (max-width:768px)  {
+/*--------------------------------------------         DE 500 a 768 px       -------------------------------------------------------  */
+@media only screen and (min-width:500px) and (max-width:768px)  {
 
     .imgLogo{
         width: 100%;
         margin-bottom: 0.6em;
     }
     .rrss{
-        margin-top: 2em;
-        margin-left: 58%;
+        margin-top: 140px;
+        margin-left: 70%;
+        display: flex;
     }
     .home{
         .home__banner{
+            display: flex;
+            flex-direction: row;
             .home__banner__titulo {
                 width: 45%;
                 margin-top: 1.9rem;
+                min-width: 232px;
             }
             .home__banner__protocolo {
-                margin-left: 71%;
-                margin-top: 35%;
+                margin-left: 59%;
+                margin-top: 220px;
             }
             .home__banner__turno {
-                margin-left: 68%;
-                margin-top: 27%;
+                margin-left: 62%;
+                margin-top: 150px;
                 width: auto;
                 .home__banner__turno__a {
                     padding: 0.8rem;
@@ -95,6 +127,10 @@
             }
         }  
     }
+    .mdsRow{
+        display: none;
+    }
+
     .Header{
         grid-area: "Header";
     }
@@ -166,42 +202,171 @@
                             "Footer"
         ;
     }
+    .blog{
+        flex-direction: column;
+    }
+    .gTalleresCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem 0.5rem;
+        margin: 1.5rem 0.5rem;
+        .talleres__img{
+            width: 85%;
+            padding: 0 0.5rem;
+            margin: 0 0.5rem;
+            justify-self: center;
+        }
+        .talleres__texto{
+            width: 85%;
+            padding: 0 1rem;
+            margin: 1.5rem 0.5rem 0 0.5rem;
+        }
+    }
+    .articulo{
+        width: 70%;
+        margin-bottom: 4rem;
+        align-self: center;
+        justify-self: center;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        &__titulo{
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        &__img{
+            min-width: 380px;
+            margin-left: 0;
+            padding-left: 0;
+            position: relative;
+            align-self: center;
+        }
+    }
+    .cardStaffDir{
+        margin: 0.5rem;
+    }
+        .cardStaff{
+        margin: 0.3rem;
+        height: auto;
+    }
+    .divProblemas{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 80%;
+        margin: 5%;
+        padding: 1rem;
+    }
+    .imgFloatRight{
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    .imgFloatLeft{
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    .imgProb{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        align-self: center;
+    }
+    .gTalleresVideo{
+        width: 85%;
+        height: 100%;
+        padding-bottom: 4rem;
+        position: relative;
+    }
+    .divPadre{
+        display: none;
+    }
+    .h3Turno{
+        display: none;
+    }
+    .formulario{
+        background-image: none;
+        background-color: $grismedio;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .fturno{
+        margin: 10px;
+        font-size: 1.1rem;
+    }
+    .elmotivo{
+        width: 90%;
+    }
+    .formularioTexto{
+        text-align: center;
+        margin-left: 0;
+    }
+    .formPaciente{
+        .formPaciente__label{
+            width: 90%;
+        }
+    }
 }
 /*--------------------------------------------       RESPONSIVE MOBILE        -------------------------------------------------------  */
-/*--------------------------------------------         HASTA 425px            -------------------------------------------------------  */
-@media only screen and (max-width:435px){
+/*--------------------------------------------         HASTA 499px            -------------------------------------------------------  */
+@media only screen and (max-width:499px){
     .imgLogo{
         width: 100%;
+        height: auto;
         margin-bottom: 0.4em;
     }
+    .navbar-brand {
+        margin-right: 0;
+    }
     .rrss{
-        margin-top: 5.2em;
-        margin-left: 40%;
+        margin-top: 194px;
+        margin-left: 60%;
     }
     .home{
         .home__banner{
+            display: flex;
+            justify-content: center;
+            position: relative;
             .home__banner__titulo {
                 width: 100%;
-                margin-top: 1rem;
                 margin-left: 0;
+                margin-bottom: 7rem;
+                padding-top: 0%;                
+                font-size: 1.8rem;
+                max-width: 400px;
             }
             .home__banner__protocolo {
-                margin-left: 25%;
-                margin-top: 77%;
+                text-align: center;
+                margin-top: 245px;
+                margin-left: 0;
+                width: 15rem;
             }
             .home__banner__turno {
-                margin-left: 20%;
-                margin-top: 60%;
-                width: auto;
+                align-items: center;
+                margin-top: 180px;
+                margin-left: 0;
+                width: 15rem;
                 .home__banner__turno__a {
-                    padding: 0.8rem;
                     text-align: center;
+                    width: 15rem;
                 }
             }
         }  
     }
+    .modal-body{
+        font-size: smaller;
+    }
     .Header{
         grid-area: "Header";
+        height: 10em;
+    }
+    .mdsRow{
+        display: none;
     }
     .gEleginos1, .gEleginos2, .gEleginos3{
         display: flex;
@@ -233,14 +398,16 @@
     .gAccidentesF{
         transform: scale(0.6);
     }
-
     .gAccidentesC {
         margin-left: 0;
+    }
+    .gMapaT{
+        margin-top: 0;
     }
     .whatsapp{
         .iconWhatsapp{
             width: 4.1em;
-            left: 75%;
+            left: 70%;
         }
     }
     .gBodyHome{
@@ -270,4 +437,140 @@
                             "Footer"
         ;
     }
+    .blog{
+        flex-direction: column;
+    }
+    .cardBlog{
+        height: fit-content;
+        margin: 2rem;
+        min-width: 200px;
+    }
+    .gTalleresCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem 0.2rem;
+        margin: 1.5rem 0.2rem;
+        .talleres__img{
+            width: 90%;
+            padding: 0 0.2rem;
+            margin: 0 0.2rem;
+            justify-self: center;
+        }
+        .talleres__texto{
+            width: 90%;
+            padding: 0 1rem;
+            margin: 1.5rem 0.5rem 0 0.5rem;
+        }
+    }
+    .articulo{
+        margin-bottom: 4rem;
+        align-self: center;
+        justify-self: center;
+        margin-left: 0;
+        &__titulo{
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        &__img{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    .grupoStaff{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .cardStaffDir{
+        width: 80%;
+        margin: 1rem;
+        height: auto;
+        align-self: center;
+    }
+    .cardStaff{
+        width: 80%;
+        margin: 1rem;
+        height: auto;
+        align-self: center;
+    }
+    .h4Staff{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .divProblemas{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 80%;
+        margin: 5%;
+        padding: 1rem;
+    }
+    .imgFloatRight{
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    .imgFloatLeft{
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    .imgProb{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        align-self: center;
+    }
+    .gTalleresVideo{
+       width: 85%;
+       height: 85%;
+       padding-bottom: 2rem;
+       position: relative;
+    }
+    .divPadre{
+        display: none;
+    }
+    .h3Turno{
+        display: none;
+    }
+    .formulario{
+        background-image: none;
+        background-color: $grismedio;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .fturno{
+        margin: 10px;
+        font-size: 1.1rem;
+    }
+    .elmotivo{
+        width: 90%;
+    }
+    .formularioTexto{
+        text-align: center;
+        margin-left: 0;
+    }
+    .liCobertura{
+        width: 80%;
+        margin-left: 5%;
+    }
+    .ulCobertura{
+        margin-left: 0;    
+        padding-left: 0;
+        width: 100%;
+        
+    }
+    .formPaciente{
+        .formPaciente__label{
+            width: 90%;
+        }
+    }
 }
+
+
+

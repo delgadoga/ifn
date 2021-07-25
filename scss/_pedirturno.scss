@@ -18,6 +18,9 @@ tr,td {
     border: 1px solid;    
     margin:0;
 }
+.pediTurn{
+    padding-bottom: 1rem;
+}
 .formulario{
     background-image: url(../img/femaledoctor.jpg);
     width: 100%;
@@ -25,16 +28,16 @@ tr,td {
 
 .formularioTexto{
     margin-left: 40px;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 #formTurno{
     text-decoration: none;
-    text-transform: none;
 }
 .divPadre{
     display: grid;
     width: 70%;
     margin-left: 15%;
+    margin-bottom: 2rem;
     text-align: center;
     align-items: center;
     border: solid #3b5998;
@@ -50,13 +53,17 @@ tr,td {
 }
 .a1, .b1, .c1, .d1{
     text-align: center;
-    background-color: #3b5998;
+    background-color: $azulifn;
     color: white;
-    font-weight: bold;
-    height: 20px;
+    font-weight: 500px;
+    height: 40px;
+    align-self: center;
+    padding: 5px;
 }
 .h3Turno{
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 

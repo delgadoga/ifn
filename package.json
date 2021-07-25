@@ -12,7 +12,7 @@
     "build-css": "node-sass --include-path scss scss/prueba.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Gabriela Delgado",
   "license": "ISC",
-  "description": ""
+  "description": "Web Site del Instituto Ferrero de Neurologia y Sueno"
 }

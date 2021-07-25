@@ -53,64 +53,90 @@
                 </div>
             </div>
         </nav>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Talleres y Cursos</li>
-            </ol>
-        </nav>
     </header>
     <!-- ENCABEZADO HOME-->
+    <div class="gtyc">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Talleres y Cursos</li>
+        </ol>
+    </nav>
+    <p class="botPaciente">
+        <button class="botonIfn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Acceso Pacientes
+        </button>
+    </p>
+    <form class="collapse formPaciente" id="collapseExample">
+        <div class="mb-3 formPaciente__label">
+          <label for="exampleInputEmail1" class="form-label ">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3 formPaciente__label">
+          <label for="exampleInputPassword1" class="form-label ">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check formPaciente__label">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Guardar Usuario</label>
+        </div>
+        <button type="submit" class="botonIfn botonIfn__a formPaciente__conf">Confirmar</button>
+    </form>
+    </div>
     <h1 class="gTalleresPrincipal">Talleres y Cursos</h1>
     <section class="gTalleresOpciones">
-        <div class="divTalleres botonIfn">
-            <a href="#talleres" class="aTalleres">Ir a Talleres Abiertos</a>
-        </div>
-        <div class="divCursos botonIfn">
-            <a href="#cursos" class="aCursos">Ir a Cursos para Profesionales</a>
-        </div>
+             <a href="#talleres" class="aTalleres botonIfn">Ir a Talleres Abiertos</a>
+            <a href="#cursos" class="aCursos botonIfn ">Ir a Cursos para Profesionales</a>
     </section>
 
     <!-- Aqui comienza la Sección 1-->
     <h2 class="gTalleresVideoT">¿Porqué dormimos?</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VfRaVIfTnjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="gTalleresVideo"></iframe>
+    <iframe width="560px" height="315" src="https://www.youtube.com/embed/VfRaVIfTnjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="gTalleresVideo"></iframe>
     
     <!-- Aqui comienza la Sección 2-->
     <h2 class="gTalleresAbiertos" id="talleres">Talleres Abiertos al Público General</h2>
-    <div class="talleres gTalleresA1Card">
-        <h3><strong> Sueño y niños </strong></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo qui quisquam debitis dolor ut maxime accusantium reprehenderit ratione rem?</p>
+    <div class="cardt1 gTalleresCard">
+        <figure class="talleres__img">
+            <img src="../img/suenoyninos.jpg" class="imgZoom" alt="niña durmiendo abrazando un oso de peluche">
+        </figure>
+        <div class="talleres__texto">
+            <h3><strong> SUEÑO Y NIÑOS </strong></h3>
+            <p>El sueño infantil es uno de los temas que más dudas e inquietud genera entre los padres. Siempre nos asaltan miedos sobre si el bebé estará durmiendo lo suficiente, sobre cuánto tiempo de sueño es el indicado para cada edad, si hay algo que nosotros podamos hacer para ayudar a los peques a conciliar el sueño</p>
+            <p>PROXIMAMENTE</p>
+        </div>
     </div>
-    <figure class="gTalleresA1">
-        <img src="../img/suenoyninos.jpg" class="suenoyninos imgZoom" alt="niña durmiendo abrazando un oso de peluche">
-    </figure>
-    
-    <div class="talleres  gTalleresA2Card">
-        <h3><strong> Sueño y Productividad </strong></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo qui quisquam debitis dolor ut maxime accusantium reprehenderit ratione rem?</p>
+    <div class="cardt2 gTalleresCard">
+        <figure class="talleres__img">
+            <img src="../img/suenoyproductividad.jpg" class="imgZoom" alt="hombre durmiendo en la oficina sobre el escritorio">
+        </figure>
+        <div class="talleres__texto">
+            <h3><strong> SUEÑO Y PRODUCTIVIDAD</strong></h3>
+            <p>La cantidad y la calidad de sueño tienen un impacto en tu habilidad para aprender, concentrarte y memorizar nueva información. Por ello, una persona privada de sueño tendrá dificultades para concentrarse, y como consecuencia, no será capaz de aprender eficazmente</p>
+            <p>INSCRIPCIONES <a href="mailto:info@ifn.com.ar">info@ifn.com.ar</a></p>
+        </div>
     </div>
-    <figure class="gTalleresA2">
-        <img src="../img/suenoyproductividad.jpg" class="suenoyproductividad imgZoom" alt="hombre durmiendo en la oficina sobre el escritorio">
-    </figure>
-    </section>
-
     <!-- Aqui comienza la Sección 3-->
     <h2 class="gCursos" id="cursos">Cursos para Personal Médico</h2>
-    <div class="cursos gCursos1Card">
-        <h3><strong> Curso para Profesionales 1</strong></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo qui quisquam debitis dolor ut maxime accusantium reprehenderit ratione rem?</p>
+    <div class="cardt3 gTalleresCard">
+        <div class="talleres__texto">
+            <h3><strong>  CURSO MULTIDISCIPLINARIO SOBRE SUEÑO</strong></h3>
+            <p>Dirigido a graduados o estudiantes avanzados de las Carreras de Medicina, Biología, Biotecnología, Nutrición, Enfermería, Odontología, Psicología, Técnicos en Neurofisiología y Polisomnografía ,investigadores científicos, y carreras afines.</p>
+            <p>PROXIMAMENTE</p>
+        </div> 
+        <figure class="talleres__img">
+            <img src="../img/cursos1.jpg" class="imgZoom" alt="mujeres profesionales de la salud estudiando e investigando sobre medicina">
+        </figure>
     </div>    
-    <figure class="gCursos1">
-        <img src="../img/cursos1.jpg" class="curso1 imgZoom" alt="mujeres profesionales de la salud estudiando e investigando sobre medicina">
-    </figure>
-    
-    <div class="cursos gCursos2Card">
-        <h3><strong> Curso para Profesionales 2</strong></h3>
-         p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo qui quisquam debitis dolor ut maxime accusantium reprehenderit ratione rem?</p>
-    </div>    
-    <figure class="gCursos2">
-        <img src="../img/cursos2.jpg" class="curso2 imgZoom" alt="mujer doctora mirando estudios médicos de neurología">
-    </figure>
+    <div class="cardt4 gTalleresCard">
+        <div class="talleres__texto">
+        <h3><strong> MAESTRIA SOBRE SUEÑO</strong></h3>
+         <p>Dirigido a graduados o estudiantes avanzados de las Carreras de Medicina, Biología, Biotecnología, Nutrición, Enfermería, Odontología, Psicología, Técnicos en Neurofisiología y Polisomnografía ,investigadores científicos, y carreras afines.</p>
+         <p>INICIA EN JUNIO 2021</p>
+        </div>
+        <figure class="talleres__img">
+            <img src="../img/cursos2.jpg" class="imgZoom" alt="mujer doctora mirando estudios médicos de neurología">
+        </figure>
+    </div>  
     
     <!-- Aqui comienza la Sección 4-->
     <h2 class="gTalleresCancionT">La mejor canción para dormir</h2>
@@ -127,10 +153,10 @@
     <footer class="Footer">
         <div class="mdsRow">
             <div class="mds">
-                <a class="mds mds__a" href="../index.html"><h3 class="mds">Inicio</h3></a>
+                <a class="mds mds__a" href="../index.html"><h3 class="mds mds__h3">Inicio</h3></a>
             </div>
             <div class="mds">
-                <h3 class="mds">Acerca de</h3>
+                <h3 class="mds mds__h32">Acerca de</h3>
                 <ul class="mds mds__ul">
                     <li class="mds mds__li"><a class="mds mds__a" href="nuestra_historia.html" >Nuestra Historia</a></li>
                     <li class="mds mds__li"><a class="mds mds__a" href="equipo_medico.html">Equipo Médico</a></li>
@@ -139,7 +165,7 @@
                 </ul>
             </div>
             <div class="mds">
-                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds">Problemas de Sueño</h3></a>
+                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds mds__h3">Problemas de Sueño</h3></a>
                 <ul class="mds mds__ul">
                     <li class="mds mds__li"><a class="mds mds__a" href="problemas_de_sueno.html#insomnio" >Insomnio</a></li>
                     <li class="mds mds__li"><a class="mds mds__a" href="problemas_de_sueno.html#apneas" >Apneas</a></li>
@@ -147,16 +173,18 @@
                 </ul>
             </div>
             <div class="mds">
-                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds">Talleres y Cursos</h3></a>
+                <a class="mds mds__a" href="info/problemas_de_sueno.html"><h3 class="mds mds__h3">Talleres Cursos</h3></a>
                 <ul class="mds mds__ul">
                     <li class="mds mds__li"><a class="mds mds__a" href="talleres_y_cursos.html#talleres" >Talleres Abiertos</a></li>
                     <li class="mds mds__li"><a class="mds mds__a" href="talleres_y_cursos.html#cursos" >Cursos para Profesionales</a></li>      
                 </ul>
             </div>
-            <div class="mdsRow">
-                <a class="mds mds__a" href="cobertura_medica.html"><h3 class="mds">Cobertura Médica</h3></a>
-                <a class="mds mds__a" href="pedir_turno.html"><h3 class="mds">Pedir un Turno</h3></a>
-            </div> 
+            <div class="mds">
+                <a class="mds mds__a" href="cobertura_medica.html"><h3 class="mds mds__h3">Cobertura Médica</h3></a>
+            </div>
+            <div class="mds">
+                <a class="mds mds__a" href="pedir_turno.html"><h3 class="mds mds__h3">Pedir Turno</h3></a>
+            </div>
         </div>
         <hr>
         Hecho con 🤍 BGD</footer>

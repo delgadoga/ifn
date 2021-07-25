@@ -2,6 +2,8 @@
 
 .ulCobertura{
     font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .liCobertura{
     margin-left: 3rem;
@@ -11,4 +13,31 @@
     width: 100%;
     position:relative;
     font-size: 14px;
+}
+.d-flex{
+    width: 88%;
+    margin-left: 6%;
+    margin-bottom: 3rem;
+    grid-area: d-flex;
+}
+.cobertura1{
+    grid-area: cobertura1;
+}
+.coberturah1{
+    grid-area: coberturah1;
+}
+
+
+.gcobertura{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:     
+                        "Header"
+                        "cobertura1"
+                        "coberturah1"
+                        "mainCobertura"
+                        "gFooter1"
+                        "Footer"
 }
