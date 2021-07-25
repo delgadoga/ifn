@@ -1043,7 +1043,7 @@ tr, td {
     flex-direction: column;
     align-content: center;
     width: 80%;
-    margin: 5%;
+    margin: 10%;
     padding: 1rem; }
   .imgFloatRight {
     width: 90%;
@@ -1218,7 +1218,7 @@ tr, td {
     flex-direction: column;
     align-content: center;
     width: 80%;
-    margin: 5%;
+    margin: 10%;
     padding: 1rem; }
   .imgFloatRight {
     width: 80%;
