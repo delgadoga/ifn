@@ -164,38 +164,6 @@ figure {
   align-self: center;
   border-radius: 2px; }
 
-/* PAGINA 404 */
-.body404 {
-  background-color: midnightblue; }
-
-.h1404 {
-  background-color: midnightblue; }
-
-.h2404 {
-  color: white; }
-  .h2404 .a404 {
-    background-color: #f0f0f0;
-    color: #3461b4;
-    text-decoration: none;
-    font-size: 1.6rem;
-    padding: 3px 10px;
-    border-radius: 2px; }
-    .h2404 .a404:hover {
-      background-color: #8a8a8b;
-      color: midnightblue; }
-
-.h3404 {
-  color: white;
-  text-align: center;
-  text-transform: none;
-  margin-top: 2rem; }
-
-.h4404 {
-  font-size: 47px;
-  color: white;
-  text-align: center;
-  margin-top: 2rem; }
-
 .Header {
   grid-area: Header; }
 
