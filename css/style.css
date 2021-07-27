@@ -164,41 +164,6 @@ figure {
   align-self: center;
   border-radius: 2px; }
 
-<<<<<<< HEAD
-=======
-/* PAGINA 404 */
-.body404 {
-  background-color: midnightblue; }
-
-.h1404 {
-  background-color: midnightblue; }
-
-.h2404 {
-  color: #f0f0f0; }
-  .h2404 .a404 {
-    background-color: #f0f0f0;
-    color: #3461b4;
-    text-decoration: none;
-    font-size: 1.6rem;
-    padding: 3px 10px;
-    border-radius: 2px; }
-    .h2404 .a404:hover {
-      background-color: #8a8a8b;
-      color: midnightblue; }
-
-.h3404 {
-  color: white;
-  text-align: center;
-  text-transform: none;
-  margin-top: 2rem; }
-
-.h4404 {
-  font-size: 47px;
-  color: white;
-  text-align: center;
-  margin-top: 2rem; }
-
->>>>>>> c07885296d3f2d44335920c44a6083221056308b
 .Header {
   grid-area: Header; }
 
@@ -255,6 +220,9 @@ figure {
 .gFooter1 {
   grid-area: gFooter1;
   margin-top: 1rem; }
+
+.bgd {
+  color: white; }
 
 .rrssf {
   display: flex;
@@ -342,18 +310,7 @@ figure {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(12, auto);
-  grid-template-areas: "Header Header Header"
- "gPrincipalHome gPrincipalHome gPrincipalHome"
- "gEleginos gEleginos gEleginos"
- "gEleginos1 gEleginos2 gEleginos3"
- "gAvancesF gAvancesF gAvancesC"
- "gNeuroT gNeuroT gNeuroT"
- "gNeuro1 gNeuro2 gNeuro3"
- "gAccidentesC gAccidentesF gAccidentesF"
- "gMapaT gMapaT gMapaT"
- "gMapaF gMapaF gMapaC"
- "gFooter1 gFooter1 gFooter1"
- "Footer Footer Footer"; }
+  grid-template-areas: "Header Header Header" "gPrincipalHome gPrincipalHome gPrincipalHome" "gEleginos gEleginos gEleginos" "gEleginos1 gEleginos2 gEleginos3" "gAvancesF gAvancesF gAvancesC" "gNeuroT gNeuroT gNeuroT" "gNeuro1 gNeuro2 gNeuro3" "gAccidentesC gAccidentesF gAccidentesF" "gMapaT gMapaT gMapaT" "gMapaF gMapaF gMapaC" "gFooter1 gFooter1 gFooter1" "Footer Footer Footer"; }
 
 .home {
   grid-area: gPrincipalHome; }
@@ -640,12 +597,7 @@ figure {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "Header"
- "historia1"
- "h1Historia"
- "articulo"
- "gFooter1"
- "Footer"; }
+  grid-template-areas: "Header" "historia1" "h1Historia" "articulo" "gFooter1" "Footer"; }
 
 .historia1 {
   grid-area: historia1; }
@@ -680,12 +632,7 @@ figure {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "Header"
- "ins1"
- "h1Articulo"
- "articulo"
- "gFooter1"
- "Footer"; }
+  grid-template-areas: "Header" "ins1" "h1Articulo" "articulo" "gFooter1" "Footer"; }
 
 .ins1 {
   grid-area: ins1; }
@@ -706,12 +653,7 @@ figure {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "Header"
- "blog1"
- "h1Articulo"
- "articulo"
- "gFooter1"
- "Footer"; }
+  grid-template-areas: "Header" "blog1" "h1Articulo" "articulo" "gFooter1" "Footer"; }
 
 .blog1 {
   grid-area: blog1; }
@@ -747,11 +689,7 @@ figure {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "Header"
- "sProblemas"
- "mProblemas"
- "gFooter1"
- "Footer"; }
+  grid-template-areas: "Header" "sProblemas" "mProblemas" "gFooter1" "Footer"; }
 
 .sProblemas {
   grid-area: sProblemas; }
@@ -791,12 +729,7 @@ figure {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "Header"
- "cobertura1"
- "coberturah1"
- "mainCobertura"
- "gFooter1"
- "Footer"; }
+  grid-template-areas: "Header" "cobertura1" "coberturah1" "mainCobertura" "gFooter1" "Footer"; }
 
 /*----------------------------------------------- TALLERES -------------------------------------- */
 .gTalleres {
@@ -804,22 +737,7 @@ figure {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(16, auto);
-  grid-template-areas: "Header Header"
- "gtyc gtyc"
- "gtalleresPrincipal gtalleresPrincipal"
- "gTalleresOpciones gTalleresOpciones"
- "gTalleresVideoT gTalleresVideoT"
- "gTalleresVideo gTalleresVideo"
- "gTalleresAbiertos gTalleresAbiertos"
- "cardt1 cardt1"
- "cardt2 cardt2"
- "gCursos gCursos"
- "cardt3 cardt3"
- "cardt4 cardt4"
- "gTalleresCancionT gTalleresCancionT"
- "gTalleresCancion gTalleresCancion"
- "gFooter1 gFooter1"
- "Footer Footer"; }
+  grid-template-areas: "Header Header" "gtyc gtyc" "gtalleresPrincipal gtalleresPrincipal" "gTalleresOpciones gTalleresOpciones" "gTalleresVideoT gTalleresVideoT" "gTalleresVideo gTalleresVideo" "gTalleresAbiertos gTalleresAbiertos" "cardt1 cardt1" "cardt2 cardt2" "gCursos gCursos" "cardt3 cardt3" "cardt4 cardt4" "gTalleresCancionT gTalleresCancionT" "gTalleresCancion gTalleresCancion" "gFooter1 gFooter1" "Footer Footer"; }
 
 .gtyc {
   grid-area: gtyc; }
@@ -943,11 +861,7 @@ tr, td {
   border: solid #3b5998;
   grid-template-columns: 4 2fr;
   grid-template-rows: 5 2fr;
-  grid-template-areas: "a1 b1 c1 d1"
- "a2 b2 c2 d2"    
- "a3 b3 c3 d3"    
- "a4 b4 c4 d4"    
- "a5 b5 C5 d5"; }
+  grid-template-areas: "a1 b1 c1 d1" "a2 b2 c2 d2"     "a3 b3 c3 d3"     "a4 b4 c4 d4"     "a5 b5 C5 d5"; }
 
 .a1, .b1, .c1, .d1 {
   text-align: center;
@@ -1025,7 +939,13 @@ tr, td {
       padding: 0 0.5rem;
       margin: 0 1rem; }
   .formPaciente .formPaciente__label {
-    width: 70%; } }
+    width: 70%; }
+  .articulo {
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .articulo__img {
+      width: 100%; } }
 
 /*--------------------------------------------       RESPONSIVE TABLET       -------------------------------------------------------  */
 /*--------------------------------------------         DE 500 a 768 px       -------------------------------------------------------  */
@@ -1089,25 +1009,7 @@ tr, td {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(19, auto);
-    grid-template-areas: "Header"
- "gPrincipalHome"
- "gEleginos"
- "gEleginos1"
- "gEleginos2" 
- "gEleginos3"
- "gAvancesF"
- "gAvancesC"
- "gNeuroT"
- "gNeuro1"
- "gNeuro2"
- "gNeuro3"
- "gAccidentesC"
- "gAccidentesF"
- "gMapaT"
- "gMapaF" 
- "gMapaC"
- "gFooter1"
- "Footer"; }
+    grid-template-areas: "Header" "gPrincipalHome" "gEleginos" "gEleginos1" "gEleginos2"  "gEleginos3" "gAvancesF" "gAvancesC" "gNeuroT" "gNeuro1" "gNeuro2" "gNeuro3" "gAccidentesC" "gAccidentesF" "gMapaT" "gMapaF"  "gMapaC" "gFooter1" "Footer"; }
   .blog {
     flex-direction: column; }
   .gTalleresCard {
@@ -1129,7 +1031,7 @@ tr, td {
   .articulo {
     width: 70%;
     margin-bottom: 4rem;
-    align-self: center;
+    align-content: center;
     justify-self: center;
     margin-left: 0;
     display: flex;
@@ -1138,7 +1040,7 @@ tr, td {
       margin-bottom: 1rem;
       width: 100%; }
     .articulo__img {
-      min-width: 380px;
+      width: 100%;
       margin-left: 0;
       padding-left: 0;
       position: relative;
@@ -1155,16 +1057,10 @@ tr, td {
     width: 80%;
     margin: 10%;
     padding: 1rem; }
-  .imgFloatRight {
-    width: 90%;
-    margin: 0;
-    padding: 0;
-    align-self: center; }
-  .imgFloatLeft {
-    width: 90%;
-    margin: 0;
-    padding: 0;
-    align-self: center; }
+  .articulo {
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
   .imgProb {
     position: relative;
     width: 100%;
@@ -1271,25 +1167,7 @@ tr, td {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(19, auto);
-    grid-template-areas: "Header"
- "gPrincipalHome"
- "gEleginos"
- "gEleginos1"
- "gEleginos2" 
- "gEleginos3"
- "gAvancesF"
- "gAvancesC"
- "gNeuroT"
- "gNeuro1"
- "gNeuro2"
- "gNeuro3"
- "gAccidentesC"
- "gAccidentesF"
- "gMapaT"
- "gMapaF" 
- "gMapaC"
- "gFooter1"
- "Footer"; }
+    grid-template-areas: "Header" "gPrincipalHome" "gEleginos" "gEleginos1" "gEleginos2"  "gEleginos3" "gAvancesF" "gAvancesC" "gNeuroT" "gNeuro1" "gNeuro2" "gNeuro3" "gAccidentesC" "gAccidentesF" "gMapaT" "gMapaF"  "gMapaC" "gFooter1" "Footer"; }
   .blog {
     flex-direction: column; }
   .cardBlog {
@@ -1313,6 +1191,9 @@ tr, td {
       padding: 0 1rem;
       margin: 1.5rem 0.5rem 0 0.5rem; }
   .articulo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     margin-bottom: 4rem;
     align-self: center;
     justify-self: center;
