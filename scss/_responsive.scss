@@ -1,6 +1,6 @@
 
 /*-----------------------------------------          RESPONSIVE TABLET NOTEBOOK     -------------------------------------------------------  */
-/*--------------------------------------------            DESDE 992PX              -------------------------------------------------------  */
+/*-----------------------------------------           DESDE 992 HASTA 1024 px       -------------------------------------------------------  */
 
 @media only screen and (min-width:992px)  and (max-width:1024px) {
     .home__banner__titulo{
@@ -19,16 +19,20 @@
     .cardBlog{
         min-width: 400px;
     }
-    
-}
-.gTalleresCard{
-    padding: 2rem 1rem;
-    margin: 2rem 1rem;
-    .talleres__img{
-        padding: 0 0.5rem;
-        margin: 0 1rem;
+    .gTalleresCard{
+        padding: 2rem 1rem;
+        margin: 2rem 1rem;
+        .talleres__img{
+            padding: 0 0.5rem;
+            margin: 0 1rem;
+        }
+    }
+    .tresGen{
+        width: 80%;
+        margin-left: 10%;
     }
 }
+
 
 /*-----------------------------------------          RESPONSIVE TABLET              -------------------------------------------------------  */
 /*--------------------------------------------           769 a 991 PX              -------------------------------------------------------  */
@@ -39,7 +43,7 @@
     }
     .rrss{
         margin-top: 125px;
-        margin-left: 50%;
+        margin-left: 70%;
     }
     .home .home__banner .home__banner__titulo {
         width: 45%;
@@ -96,8 +100,14 @@
             width: 100%;
         }
     }
+    .tresGen{
+        display: flex;
+        flex-direction: wrap;
+        align-items: center;
+    }
 
 }
+
 
 /*--------------------------------------------       RESPONSIVE TABLET       -------------------------------------------------------  */
 /*--------------------------------------------         DE 500 a 768 px       -------------------------------------------------------  */
@@ -255,9 +265,16 @@
     .cardStaffDir{
         margin: 0.5rem;
     }
-        .cardStaff{
+    .grupoStaff{
+        direction: flex;
+        flex-wrap: wrap;
+    }
+    .cardStaff{
         margin: 0.3rem;
         height: auto;
+    }
+    .imgStaff{
+        height: 11rem;
     }
     .divProblemas{
         display: flex;
@@ -292,7 +309,7 @@
     }
     .formulario{
         background-image: none;
-        background-color: $grismedio;
+        background-color: #c9cfd2;
         width: 90%;
         margin-left: 5%;
     }
@@ -312,12 +329,17 @@
             width: 90%;
         }
     }
+    .tresGen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 /*--------------------------------------------       RESPONSIVE MOBILE        -------------------------------------------------------  */
 /*--------------------------------------------         HASTA 499px            -------------------------------------------------------  */
 @media only screen and (max-width:499px){
     .imgLogo{
-        width: 100%;
+        width: 99%;
         height: auto;
         margin-bottom: 0.4em;
     }
@@ -326,7 +348,16 @@
     }
     .rrss{
         margin-top: 194px;
-        margin-left: 60%;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 0;
+        width: 100%;
+    }
+    .rrss_ul{
+        padding-left: 0;
+    }
+    .breadcrum{
+        flex-wrap: wrap;
     }
     .home{
         .home__banner{
@@ -376,14 +407,12 @@
         align-self: center;
         width: 100%;
     }
-
     .gEleginos1 .gEleginos1__doctor{
         margin-right: 0;
     }
     .gEleginos3 .gEleginos3__cobertura {
         margin-left: 0;
         justify-self:center;
-
     }
     .gNeuro1, .gNeuro2, .gNeuro3{
         justify-self:center;
@@ -393,8 +422,11 @@
         margin-right: 0;
         margin-top: 0;
     }
+    .fotoAvances{
+        width: 100%;
+    }
     .gAvancesF{
-        transform: scale(0.5);
+        transform: scale(0.8);
     }
     .gAccidentesF{
         transform: scale(0.6);
@@ -486,19 +518,23 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
     }
     .cardStaffDir{
-        width: 80%;
-        margin: 1rem;
+        width: 70%;
+        margin: 15%;
         height: auto;
         align-self: center;
     }
     .cardStaff{
-        width: 80%;
-        margin: 1rem;
+        width: 70%;
+        margin: 15%;
         height: auto;
         align-self: center;
+    }
+    .imgStaff{
+        height: auto;
     }
     .h4Staff{
         text-align: center;
@@ -544,7 +580,7 @@
     }
     .formulario{
         background-image: none;
-        background-color: $grismedio;
+        background-color: #c9cfd2;
         width: 90%;
         margin-left: 5%;
     }
@@ -574,7 +610,13 @@
             width: 90%;
         }
     }
+    .tresGen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 10%;
+    }
 }
-
 
 

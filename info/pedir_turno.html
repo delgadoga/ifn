@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>pedir un Turno</title>
-    <link rel="icon" href="/img/iconodoctor.svg">
+    <link rel="icon" href="/img/icono_doctor.svg">
     <!-- Fuentes,-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logoifn.png" alt="logo ifn" ></a>
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo_ifn.png" alt="logo ifn" ></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -115,37 +115,35 @@
         <h3 class="fturno" id="formTurno">Para solicitar un turno debe completar el siguiente formulario</h3>
         <br>
         <form action="pediTurn">
-            <input type="text" name="Nombre" placeholder="Escribe tu Nombre" maxlength="25" required><br>
+            <input type="text" name="Nombre" placeholder="Escribe tu Nombre" maxlength="25" required> <br>
             <br>
             <input type="text" name="Apellido" placeholder="Escribe tu Apellido" maxlength="25" required><br>
             <br>
             <input type="number" name="number" placeholder="Escribe tu Teléfono" maxlength="10 "required><br>
             <br>
             <input type="email" name="Email" placeholder="Escribe tu email" required><br><br>
-            <h4><label for="select">Elige al especialista</label></h4>  
+            <h4 class="h4Form"><label for="select">Elige al especialista</label></h4><br>  
                 <select name="select" id="">
                     <option value="aferrero">Dr. Alejandro Ferrero</option>
                     <option value="pferrero">Dr. Pablo Ferrero</option>
                     <option value="slopez">Dra. Susana Lopez</option>
                     <option value="gvega">Dra. Gabriela Vega</option>
                 </select> 
-                <br>
-                <br>
-            <h4><label for="radio">Elige tipo de consulta</label></h4>
+                <br><br><br>
+            <h4 class="h4Form"><label for="radio">Elige tipo de consulta</label></h4><br>
                 <label>
                     <input type="radio" name="turno"> Videollamada
                 </label>
                 <label>
                     <input type="radio" name="turno"> Presencial 
                 </label>
-                <br>
-                <br>
-            <h4><label for="data">Elige el día</label></h4>  
+                <br><br><br>
+            <h4 class="h4Form"><label for="data">Elige el día</label></h4><br>  
             <input type="date">
             <br>
             <br>
 
-            <h4><label for="textarea">Informa el motivo de tu consulta</label></h4>
+            <h4 class="h4Form"><label for="textarea">Informa el motivo de tu consulta</label></h4><br>
             <textarea class="elmotivo" name="motivo" id="" cols="30" rows="10"></textarea>
             <br><br>
             <label for="checkbox">Quiero que me contacten</label>

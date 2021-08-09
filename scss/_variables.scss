@@ -37,7 +37,7 @@ $ancho: 6rem;
 
 @for $i from 1 through 5{
     .caja-#{$i}{
-        background-color: darken(#d9e0f3, $i * 8)
+        background-color: darken(#d9e0f3, $i * 4)
     }
 }
 
@@ -88,6 +88,7 @@ h3{
     text-transform: uppercase;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-weight: 600;
 }   
 
 h4{
@@ -166,20 +167,6 @@ h4{
 
 .botonIfn--modificado:hover::before {
     width: 100%;
-}
-
-
-.botPaciente{
-    margin-top: 1rem;
-}
-.formPaciente{
-    .formPaciente__label{
-        width: 50%;
-        margin-left: 1%;
-    }
-    .formPaciente__conf{
-         margin-bottom: 1rem;
-    }
 }
 
 

@@ -63,6 +63,24 @@
     }
 }
 
+.breadcrumb-item{
+    margin-left: 5px;
+    font-size: smaller;
+}
+.botPaciente{
+    margin-top: 1rem;
+    margin-left: 5px;
+}
+.formPaciente{
+    .formPaciente__label{
+        width: 50%;
+        margin-left: 1%;
+    }
+    .formPaciente__conf{
+         margin-bottom: 1rem;
+    }
+}
+
 
 .dropdown-item{
     &:active{

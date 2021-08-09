@@ -16,12 +16,14 @@
     &__titulo{
         text-align: center;
         font-weight: bold;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         text-transform: uppercase;
     }
     &__img{
         width: 20rem;
         float: left;
+        margin-left: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -29,15 +31,15 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(8, auto);
     grid-template-areas:     
                         "Header"
                         "historia1"
                         "h1Historia"
                         "articulo"
+                        "tresGen"
                         "gFooter1"
                         "Footer"
-
 }
 .historia1{
     grid-area: historia1;
@@ -46,6 +48,23 @@
     grid-area: h1Historia;
     margin-top: 13px;
 }
+.tresGen{
+    display: flex;
+    justify-content: center;
+    grid-area: tresGen;
+    width: 100%;
+    .cardGen{
+        width: ($ancho*3)-2;
+        height: 22.2rem;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        text-align: center;
+        background-color: $huesoifn;
+    }
+}
+
 
 
 /*    STAFF    */
@@ -69,6 +88,9 @@
     justify-content: center;
     text-align: center;
 }
+.imgStaff{
+    height: 11rem;
+}
 
 /*  NUESTRAS INSTALACIONES */ 
 
@@ -76,12 +98,15 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(9, auto);
     grid-template-areas:     
                         "Header"
                         "ins1"
                         "h1Articulo"
                         "articulo"
+                        "gMapaT"
+                        "gMapaC"
+                        "gMapaF"
                         "gFooter1"
                         "Footer"
 }
