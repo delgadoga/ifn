@@ -699,7 +699,8 @@ figure {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 10%;
-  padding: 1rem; }
+  padding: 1rem;
+  height: auto; }
   .divProblemas--modificado {
     background-color: white; }
 
@@ -983,7 +984,9 @@ tr, td {
   .tresGen {
     display: flex;
     flex-direction: wrap;
-    align-items: center; } }
+    align-items: center; }
+  .mds {
+    width: 20%; } }
 
 /*--------------------------------------------       RESPONSIVE TABLET       -------------------------------------------------------  */
 /*--------------------------------------------         DE 500 a 768 px       -------------------------------------------------------  */

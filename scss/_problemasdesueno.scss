@@ -7,10 +7,12 @@
     margin-bottom: 1rem;
     margin-left: 10%;
     padding:1rem;
+    height: auto;
     &--modificado{
         background-color: $blancoifn;
     }
 }
+
 .imgProb{
     position: relative;
 }
