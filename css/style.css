@@ -146,14 +146,18 @@ figure {
   margin-left: 1rem;
   justify-self: center;
   align-self: center;
-  border-radius: 2px; }
+  border-radius: 2px;
+  padding: 0 1rem;
+  height: 20rem; }
 
 .imgFloatLeft {
   float: left;
   margin-right: 1rem;
   justify-self: center;
   align-self: center;
-  border-radius: 2px; }
+  border-radius: 2px;
+  padding: 0 1rem;
+  height: 19rem; }
 
 .Header {
   grid-area: Header; }
@@ -700,7 +704,7 @@ figure {
   margin-bottom: 1rem;
   margin-left: 10%;
   padding: 1rem;
-  height: auto; }
+  align-content: center; }
   .divProblemas--modificado {
     background-color: white; }
 
