@@ -129,6 +129,9 @@
     }
 }
 
+
+
+
 .gEleginos{
     grid-area: gEleginos;
     text-align: center;
@@ -139,17 +142,24 @@
     @include alinear(gEleginos1,center,flex-end,center,2rem 0 2rem 0);
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: flex-end;
     .gEleginos1__doctor {
-        margin-right: 18%;
         width: 20%;
+        opacity: (0.8);
+        &:hover{
+            opacity: (1);
+        }
     }  
 }
 
 .gEleginos2{
     @include alinear(gEleginos2,center,center,center,2rem 0 2rem 0);
     .gEleginos2__instalaciones{
-        width: 20%;        
+        width: 20%;
+        opacity: (0.8);
+        &:hover{
+            opacity: (1);
+        }        
     }
 }
 .gEleginos3{
@@ -158,9 +168,16 @@
     flex-direction: column;
     align-items: flex-start;
     .gEleginos3__cobertura {
-        margin-left: 15%;
         width: 20%;
+        opacity: (0.8);
+        &:hover{
+            opacity: (1);
+        }
     }
+}
+
+.aEleginos{
+    text-decoration: none;
 }
 
 .gAvancesF{
@@ -242,6 +259,7 @@
     margin: 2rem 0 2rem 0;
     border-radius: 5px;
 }
+
 .gMapaT{
     grid-area: gMapaT;
     text-align: center;
