@@ -40,10 +40,16 @@
 @media only screen and (min-width:769px) and (max-width:991px) {
     nav{
         justify-content: center;
+
+      }
+    .navbar{
+        z-index: 5;
     }
+
     .rrss{
-        margin-top: 125px;
+        margin-top: 140px;
         margin-left: 70%;
+        display: flex;
     }
     .home .home__banner .home__banner__titulo {
         width: 45%;
@@ -118,6 +124,9 @@
     .imgLogo{
         width: 100%;
         margin-bottom: 0.6em;
+    }
+    .navbar{
+        z-index: 5;
     }
     .rrss{
         margin-top: 140px;
@@ -344,6 +353,9 @@
         width: 99%;
         height: auto;
         margin-bottom: 0.4em;
+    }
+    .navbar{
+        z-index: 5;
     }
     .navbar-brand {
         margin-right: 0;

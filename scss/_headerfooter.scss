@@ -12,7 +12,6 @@
 .rrss{
     @include rrssdisplay(flex, row, flex-end);
     position:absolute;
-    z-index: 2;
     margin-top: 1.25em;
     margin-left: 85%;
     z-index: 4;

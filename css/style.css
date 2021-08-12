@@ -164,7 +164,6 @@ figure {
   flex-direction: row;
   justify-content: flex-end;
   position: absolute;
-  z-index: 2;
   margin-top: 1.25em;
   margin-left: 85%;
   z-index: 4; }
@@ -955,9 +954,12 @@ tr, td {
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   nav {
     justify-content: center; }
+  .navbar {
+    z-index: 5; }
   .rrss {
-    margin-top: 125px;
-    margin-left: 70%; }
+    margin-top: 140px;
+    margin-left: 70%;
+    display: flex; }
   .home .home__banner .home__banner__titulo {
     width: 45%;
     margin-top: 1.9rem; }
@@ -1009,6 +1011,8 @@ tr, td {
   .imgLogo {
     width: 100%;
     margin-bottom: 0.6em; }
+  .navbar {
+    z-index: 5; }
   .rrss {
     margin-top: 140px;
     margin-left: 70%;
@@ -1163,6 +1167,8 @@ tr, td {
     width: 99%;
     height: auto;
     margin-bottom: 0.4em; }
+  .navbar {
+    z-index: 5; }
   .navbar-brand {
     margin-right: 0; }
   .rrss {
