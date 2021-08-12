@@ -39,11 +39,12 @@
 }
 .gTalleresVideoT{
     grid-area: gTalleresVideoT;
+    margin-bottom: 2em;
 }
 .gTalleresVideo{
     grid-area: gTalleresVideo;
     justify-self: center;
-    margin: 2em;
+    margin-bottom: 3.5em;
 }
 .gTalleresAbiertos{
     grid-area: gTalleresAbiertos;
@@ -84,7 +85,7 @@
     margin-bottom: 3rem;
 }
 
-/*     prueba  */
+/*    Card  */
 
 .gTalleresCard{
     background-color: $grisifn;
@@ -96,10 +97,9 @@
     margin: 2rem 3rem;
     .talleres__img{
         width: 80%;
-        padding: 0 1rem;
         margin: 0 2rem;
         height: 18rem;
-        border-radius: 2px;
+        border-radius: 5px;
     }
     .talleres__texto{
         width: 80%;

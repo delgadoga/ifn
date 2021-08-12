@@ -146,8 +146,7 @@ figure {
   margin-left: 1rem;
   justify-self: center;
   align-self: center;
-  border-radius: 2px;
-  padding: 0 1rem;
+  border-radius: 5px;
   height: 20rem; }
 
 .imgFloatLeft {
@@ -155,9 +154,7 @@ figure {
   margin-right: 1rem;
   justify-self: center;
   align-self: center;
-  border-radius: 2px;
-  padding: 0 1rem;
-  height: 19rem; }
+  border-radius: 5px; }
 
 .Header {
   grid-area: Header; }
@@ -718,8 +715,12 @@ figure {
   .divProblemas--modificado {
     background-color: white; }
 
+.imgApneas {
+  height: 19rem; }
+
 .imgProb {
-  position: relative; }
+  position: relative;
+  border-radius: 5px; }
 
 .h1problemas {
   margin-top: 13px; }
@@ -796,12 +797,13 @@ figure {
   justify-content: space-around; }
 
 .gTalleresVideoT {
-  grid-area: gTalleresVideoT; }
+  grid-area: gTalleresVideoT;
+  margin-bottom: 2em; }
 
 .gTalleresVideo {
   grid-area: gTalleresVideo;
   justify-self: center;
-  margin: 2em; }
+  margin-bottom: 3.5em; }
 
 .gTalleresAbiertos {
   grid-area: gTalleresAbiertos; }
@@ -838,7 +840,7 @@ figure {
 .aTalleres, .aCursos {
   margin-bottom: 3rem; }
 
-/*     prueba  */
+/*    Card  */
 .gTalleresCard {
   background-color: #f8f9fa;
   display: flex;
@@ -849,10 +851,9 @@ figure {
   margin: 2rem 3rem; }
   .gTalleresCard .talleres__img {
     width: 80%;
-    padding: 0 1rem;
     margin: 0 2rem;
     height: 18rem;
-    border-radius: 2px; }
+    border-radius: 5px; }
   .gTalleresCard .talleres__texto {
     width: 80%; }
 
