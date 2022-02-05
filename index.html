@@ -69,11 +69,23 @@
               <li class="breadcrumb-item active" aria-current="page">Inicio</li>
             </ol>
         </nav>
-        <p class="botPaciente">
-            <button class="botonIfn botonIfn__a" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
+
+        <label for="dark-mode" class="dark-mode-button">
+            <input id="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')">
+            Ver modo oscuro
+        </label>
+
+
+
+
+
+
+        <div class="btnacceso">
+            <div class="btnifn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
               Acceso Pacientes
-            </button>
-        </p>
+            </div>
+        </div>
         <form class="collapse formPaciente" id="collapseExample">
             <div class="mb-3 formPaciente__label">
               <label for="exampleInputEmail1" class="form-label ">Email</label>
@@ -87,17 +99,22 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Guardar Usuario</label>
             </div>
-            <button type="submit" class="botonIfn botonIfn__a formPaciente__conf">Confirmar</button>
+            <button type="submit" class="btnifn formPaciente__conf">Confirmar</button>
         </form>
-        <div class="home__banner"> 
-            <h1 class="home__banner__titulo animate__animated animate__zoomIn">Somos expertos en Neurología y Medicina del Sueño</h1>
-            <div class="home__banner__turno">
-                <a href="info/pedir_turno.html" class="home__banner__turno__a">Quiero pedir un turno</a>
-            </div>
-            <!-- Button trigger modal --> 
-            <button type="button" class="home__banner__protocolo botonIfn botonIfn--modificado" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+         <!-- <div class="home__banner"> 
+            <h1 class="home__banner__titulo animate__animated animate__zoomIn">Somos expertos en Neurología y Medicina del Sueño</h1>-->
+
+            <div class="portada gPrincipalHome home__banner">
+                <div class="btnturno">
+                    <a href="info/pedir_turno.html" class="btnifn">Quiero pedir un turno</a>
+                </div>
+                <!-- Button trigger modal --> 
+            <div class="btnprotocolo">
+                <div type="button" class="btnifn2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Protocolo Covid-19
-            </button>
+                </div>
+            </div>
             
             <!-- Modal--> 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -107,7 +124,7 @@
                         <h5 class="modal-title" id="exampleModalLabel">IFN INFORMA</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body ">
                             <h3 class="estimado"><i class="fas fa-exclamation-circle iEstimado"></i>ESTIMADO PACIENTE</h3>
                                 <p>Le informamos los modos de atención que ofrecemos a nuestros pacientes:</p>
                                 <p><strong>Si Ud necesita una CONSULTA, puede hacerla</strong></p>
@@ -129,41 +146,69 @@
                                 <br>● Desde la web: <a href="https://pacientes.ifn.com.ar/welcome">Pacientes</a></p>
                         </div>
                         <div class="modal-footer botonLeido">
-                            <button type="button" class="botonIfn botonIfn__a" data-bs-dismiss="modal">Leído</button>
+                            <button type="button" class="btnifn " data-bs-dismiss="modal">Leído</button>
                         </div>
                     </div>
                 </div>
             </div> 
+                <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                <h1 class="h1Home home__banner__titulo animate__animated animate__zoomIn">Somos Expertos en Neurología y Medicina del Sueño</h1>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/doc2ok.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/portada_pablo.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/home_ifn.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+            
         </div>
         <h4 class="home__contacto"> Junín 1120 - CABA <a href="#contacto" class="home__contacto__mapaIcon"><i class="fas fa-map-marker-alt"></i></a>Teléfono 5031-7300  |  Turnos +54 9 11 6217-9590 |  Turnos por PSG +54 9 11 6217-9393 </h4>
     </section>
 
+
     <!-- Aqui comienza la Sección 1-->
     <h2 class="gEleginos">Por qué elegirnos</h2>
-        <!-- COLUMNA 1-->
-    
-    <div class="gEleginos1">
-        <a href="info/equipo_medico.html" class="aEleginos">
-            <img src="img/icono_doctor.svg" class="gEleginos1__doctor" alt="icono doctor" >
-            <h3><strong> Nuestro Equipo Médico</strong></h3>
-        </a>
-    </div>     
-    </div>
-    <!-- COLUMNA 2-->
-    <div class="gEleginos2">
-        <a href="info/instalaciones.html" class="aEleginos">
-            <img src="img/icon_equipamiento.svg" class="gEleginos2__instalaciones" alt="icono instalaciones">
-            <h3><strong> Nuestras Instalaciones</strong></h3>
-        </a>
-    </div>
-    <!-- COLUMNA 3-->
-    <div class="gEleginos3">
-        <a href="info/cobertura_medica.html" class="aEleginos">
-            <img src="img/icono_cobertura.svg" class="gEleginos3__cobertura" alt="icono cobertura">
-            <h3><strong> Amplia Cobertura</strong></h3>
-        </a>
+
+
+    <div class="container-all gEleginosCards">
+        <div class="container-box">
+            <a href="info/equipo_medico.html"><div class="box">
+                <i class="fas fa-user-md icon"></i>
+                <h4 class="title">Equipo Médico</h4>
+                <p>Contamos con los mejores especialistas</p>
+                <div class="background-hover"></div>
+            </div></a>
+            <a href="info/instalaciones.html"><div class="box">
+                <i class="far fa-hospital icon"></i>
+                <h4 class="title">Instalaciones</h4>
+                <p>Equipamiento de última tecnología</p>
+                <div class="background-hover"></div>
+            </div></a>
+            <a href="info/cobertura_medica.html"><div class="box">
+                <i class="fas fa-notes-medical icon"></i>
+                <h4 class="title">Cobertura</h4>
+                <p>Amplia cobertura médica y prepagas</p>
+                <div class="background-hover"></div>
+            </div></a>
+        </div>
     </div>
 
+        
+ 
     <!-- Aqui comienza la Sección 2-->
 
     <figure class="gAvancesF">
@@ -183,8 +228,8 @@
         <div class="card-body">
             <h5 class="card-title">Insomnio</h5>
             <p class="card-text">Lo podríamos resumir como dormir poco o dormir mal. Con diferentes grados de severidad, tiene insomnio un 40% de la población general. Se suele asociar...</p>
-            <a href="info/problemas_de_sueno.html" class="botonIfn">Ver más</a>
         </div>
+        <a href="info/problemas_de_sueno.html" class="btnvermas btnifn">Ver más</a>
     </div>
 
     <div class="card gNeuro2">
@@ -194,7 +239,7 @@
         <div class="card-body">
             <h5 class="card-title">Apneas y Ronquidos</h5>
             <p class="card-text">Las apneas obstructivas del sueño y su versión parcial, las hipopneas son pausas respiratorias, producidas por la obstrucción mecánica de la vía respiratoria alta.</p>
-            <a href="info/problemas_de_sueno.html" class="botonIfn">Ver más</a>
+            <a href="info/problemas_de_sueno.html" class="btnvermas btnifn">Ver más</a>
         </div>
     </div>
 
@@ -205,7 +250,7 @@
         <div class="card-body">
             <h5 class="card-title">Somnolencia</h5>
             <p class="card-text">Los médicos hablamos de ESD, es decir Excesiva Somnolencia Diurna, cuando las personas tienen sueño durante el día, con frecuencia, sin un motivo razonable</p>
-            <a href="info/problemas_de_sueno.html" class="botonIfn">Ver más</a>
+            <a href="info/problemas_de_sueno.html" class="btnvermas btnifn">Ver más</a>
         </div>
     </div>
     

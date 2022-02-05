@@ -2,6 +2,7 @@
 
 $azulifn: rgb(52, 97, 180);
 $celesteinf:  rgb(107, 139, 199);
+$azulmedioifn: rgb(35, 72, 141);
 $azuloscuroifn: midnightblue;
 $blancoifn: white;
 $huesoifn: #f0f0f0;
@@ -12,35 +13,10 @@ $azulfb: #3b5998;
 $rosaig: #c32aa3;
 $azullk: #0e76a8;
 $rojoifn:rgb(216, 55, 55);
+$negroifn: #000000;
 $fontifn1:  'Roboto', sans-serif;
 $fontifn2:  'Poppins', sans-serif;
 $ancho: 6rem;
-
-
-//   CONDICIONAL //
-
-@mixin botones($color){
-    background:$color;
-    @if $color == $azulifn{
-        color: $grisifn;
-    }
-        @else if $color == $blancoifn{
-            color: $azulifn
-        }
-            @else{
-                color: $azuloscuroifn
-            }
-                
-}
-
-//   BUCLE FOR   //
-
-@for $i from 1 through 5{
-    .caja-#{$i}{
-        background-color: darken(#d9e0f3, $i * 4)
-    }
-}
-
 
 
 //  LINEAMIENTOS GENERALES  //
@@ -52,10 +28,7 @@ $ancho: 6rem;
 
 body{
     font-family: $fontifn1;
-    
-}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+    background-color: $grisifn;
 }
 
 h1 { 
@@ -96,31 +69,39 @@ h4{
     font-family:$fontifn2;
 }   
 
-.botonIfn{
-    @include botones($azulifn);
-    text-transform: uppercase;
+
+
+
+.navbar{
+    position: relative;
+}
+
+//   BOTONES  //
+
+.btnifn{
+    display: flex;
+    position: relative;
+    width: max-content;
     font-size: 0.9rem;
     text-align: center;
-    font-weight: 500;
     text-decoration: none;
-    height: auto;
-    width: max-content;
-    padding: 8px;
-    border-radius: 2px;
-    border-style: none;
+    font-weight: 500;
+    background: linear-gradient(to bottom, $azulifn, $azulmedioifn);
+    color: $blancoifn;
+    padding: 0.5em 0.8em;
+    border: none;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    z-index: 1;
+    border-radius: 2px;
+    z-index: 10;
     &:hover{
-        @include botones($grisifn);
-        height: fit-content;
         color: $azulifn;
-        box-shadow: 1.5px 1.5px 1px 1px;
+        font-weight: 500;
     }
     &::before {
         height: 100%;
         width: 0%;
-        background-color: $grisifn;
+        background-color: $huesoifn;
         color: $azulifn;
         left: 0;
         top: 0;
@@ -130,44 +111,214 @@ h4{
         transition: all 0.4s ease-in-out;
         z-index: -1;
     }
+    &:hover::before {
+        width: 100%;
+    }   
 }
 
 
-.botonIfn--modificado{
-    background-color: $grisifn;
+.btnifn2{
+    display: flex;
+    position: relative;
+    width: max-content;
+    font-size: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: $huesoifn;
     color: $azulifn;
+    padding: 0.5em 0.8em;
+    border: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 2px;
+    z-index: 10;
     &:hover{
-        background-color: $azulifn;
         color: $blancoifn;
+        font-weight: 500;
     }
-    &:enabled{
-        border: none;
-        box-shadow: none;
-    }
-    &:checked, :active{
-        background-color: $azulifn;
+    &::before {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(to bottom, $azulifn, $azulmedioifn);
         color: $blancoifn;
+        left: 0;
+        top: 0;
+        position: absolute;
+        content: "";
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        z-index: -1;
     }
-    
+    &:hover::before {
+        width: 100%;
+    }   
 }
 
-.botonIfn--modificado::before {
-    height: 100%;
-    width: 0%;
-    background-color: $azulifn;
+//   CAJA HOVER EFECTO CIRCLE  //
+
+
+
+.container-all{
+    max-width: 62.5rem;
+    margin: auto;
+
+}
+
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.container-box a{
+    text-decoration: none;
+    color: $negroifn;
+
+}
+
+
+.box{
+    width: 15.65rem;
+    height: 11.25rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    background: $blancoifn;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms;
+    box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.493);
+}
+
+.box:hover{
+    transform: translate(5px,-5px);
+    box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.493);
+}
+
+
+.box .icon,
+.box h4,
+.box p{
+    position: relative;
+    z-index: 1;
+    transition: all 200ms;
+}
+
+
+.box .icon{
+    font-size: 2.5rem;
+    color: $azulifn;
+    transform: translateY(30px);
+}
+
+
+.box:hover .icon{
     color: $blancoifn;
-    left: 0;
-    top: 0;
-    position: absolute;
-    content: "";
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    z-index: -1;
+    font-size: 30px;
+    transform: translateY(0);
 }
 
-.botonIfn--modificado:hover::before {
-    width: 100%;
+
+
+
+.box h4,
+.box p{
+    margin-top: 10px;
 }
+
+.box h4{
+    font-size: 1.5rem;
+    transform: translateY(30px);
+}
+
+
+.box:hover h4{
+    color: $blancoifn;
+    transform: translateY(0);
+}
+
+
+.box p{
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+    color: $blancoifn;
+}
+
+
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.box .background-hover{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    background: $azulifn;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, $azulifn, $azulmedioifn);
+}
+
+.box:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   CONDICIONAL //
+
+@mixin botones($color){
+    background:$color;
+    @if $color == $azulifn{
+        color: $grisifn;
+    }
+        @else if $color == $blancoifn{
+            color: $azulifn
+        }
+            @else{
+                color: $azuloscuroifn
+            }
+                
+}
+
+//   BUCLE FOR   //
+
+@for $i from 1 through 5{
+    .caja-#{$i}{
+        background-color: darken(#d9e0f3, $i * 4)
+    }
+}
+
+
+
 
 
 // IMAGENES CON ZOOM //
@@ -213,5 +364,11 @@ figure{
     justify-self: center;
     align-self: center;
     border-radius: 5px;
+}
+
+// INFO //
+
+.info{
+    margin: 0 1rem;
 }
 

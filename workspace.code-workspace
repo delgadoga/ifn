@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\miWeb"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\malena"
+		},
+		{
+			"path": "E:\\Cli. IFN\\medigrids\\template"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ifn"
+	}
+}

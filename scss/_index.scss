@@ -6,6 +6,64 @@
     margin: $margin;
 }
 
+
+/*  DARK MODE  */
+
+
+.dark-mode-button{
+    position: absolute;
+    top: 120px;
+    left: 85%;
+    padding: 10px;
+    background-color: $blancoifn;
+    font-size: 13px;
+    z-index: 100;
+}
+
+html.dark-mode{
+    filter: invert(100%);
+}
+
+html.dark-mode img{
+    filter: invert(100%);
+}
+
+
+
+
+
+/* BOTONE */
+
+.btnacceso{
+    position: relative;
+    margin-bottom: 1rem;
+
+}
+
+
+.btnturno{
+    position: absolute;
+    margin-top: 15rem;
+    margin-left: 65%;
+
+}
+
+.btnprotocolo{
+    position: absolute;
+    margin-left: 66%;
+    margin-top: 300px;
+}
+
+.btnvermas{
+    text-decoration: none;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
 /*      GRIDS        */
 .gBodyHome{
     width: 100%;
@@ -16,7 +74,7 @@
                         "Header Header Header"
                         "gPrincipalHome gPrincipalHome gPrincipalHome"
                         "gEleginos gEleginos gEleginos"
-                        "gEleginos1 gEleginos2 gEleginos3"
+                        "gEleginosCards gEleginosCards gEleginosCards"
                         "gAvancesF gAvancesF gAvancesC"
                         "gNeuroT gNeuroT gNeuroT"
                         "gNeuro1 gNeuro2 gNeuro3"
@@ -52,49 +110,7 @@
             position: absolute;
             z-index: 1; 
         }
-        .home__banner__turno{
-            margin-top: 8rem;
-            margin-left: 65%;
-            display: flex;
-            position: absolute;
-            font-size: 0.9rem;
-            text-align: center;
-            font-weight: 500;
-            background-color: $azulifn;
-            color: $blancoifn;
-            border: none;
-            -webkit-transition: 0.5s;
-            transition: 0.5s;
-            border-radius: 2px;
-            z-index: 1;
-            .home__banner__turno__a{
-                text-transform: uppercase;
-                text-align: center;
-                text-decoration: none;
-                color: $blancoifn;
-                padding: 15px 30px;
-                &:hover{
-                    color: $azulifn;
-                    font-weight: 500;
-                }        
-            }
-        }
-        .home__banner__turno::before {
-            height: 100%;
-            width: 0%;
-            background-color: $huesoifn;
-            color: $azulifn;
-            left: 0;
-            top: 0;
-            position: absolute;
-            content: "";
-            -webkit-transition: all 0.4s ease-in-out;
-            transition: all 0.4s ease-in-out;
-            z-index: -1;
-        }
-        .home__banner__turno:hover::before {
-            width: 100%;
-        }
+        
         .home__banner__protocolo{
             position: absolute;
             margin-left: 69%;
@@ -118,6 +134,9 @@
     }
 }
 
+
+
+
 .estimado{
     margin-left: 0;
     width: 100%;
@@ -138,43 +157,12 @@
     margin-top: 4rem;
     margin-bottom: 3rem;
 }
-.gEleginos1{
-    @include alinear(gEleginos1,center,flex-end,center,2rem 0 2rem 0);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    .gEleginos1__doctor {
-        width: 20%;
-        opacity: (0.8);
-        &:hover{
-            opacity: (1);
-        }
-    }  
+
+
+.gEleginosCards{
+    grid-area: gEleginosCards;
 }
 
-.gEleginos2{
-    @include alinear(gEleginos2,center,center,center,2rem 0 2rem 0);
-    .gEleginos2__instalaciones{
-        width: 20%;
-        opacity: (0.8);
-        &:hover{
-            opacity: (1);
-        }        
-    }
-}
-.gEleginos3{
-    @include alinear(gEleginos3,center,flex-start,center,2rem 0 2rem 0);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    .gEleginos3__cobertura {
-        width: 20%;
-        opacity: (0.8);
-        &:hover{
-            opacity: (1);
-        }
-    }
-}
 
 .aEleginos{
     text-decoration: none;
@@ -202,12 +190,12 @@
     padding: 1rem;
     height: auto;
     text-align: center;
-    background-color: $azulifn;
+    background: $azulifn;
     color: white;
-    opacity: 0.8;
     border-radius: 5px;
+    transition: all 300ms;
     &:hover{
-        opacity: 1;
+        background: $azulmedioifn;
     }
     .gCardAvances__titulo, .gCardAvances__texto{
         color: cornsilk;
@@ -243,14 +231,14 @@
     text-align: center;
     background-color: $azulifn;
     color: white;
-    opacity: 0.8;
+    transition: all 300ms;
     border-radius: 5px;
     .tAccidentes,.tAccidentes2 {
         color: cornsilk;
     }
 }
 .gAccidentesC:hover{
-    opacity: 1;
+    background: $azulmedioifn;
 }
 .gAccidentesF{
     grid-area: gAccidentesF;
@@ -259,6 +247,8 @@
     margin: 2rem 0 2rem 0;
     border-radius: 5px;
 }
+
+
 
 .gMapaT{
     grid-area: gMapaT;

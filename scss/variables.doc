@@ -1,0 +1,177 @@
+//  LINEAMIENTOS GENERALES //
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $fontifn1;
+    
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 { 
+    font-family:$fontifn2;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, $azulifn, rgb(75, 116, 194));
+    height: 5em;
+    padding-top: 2em;
+    color:$blancoifn;
+    margin-bottom: 2em;
+    margin-top: 30px;
+}
+h2{
+    font-family:$fontifn2;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color:$azulifn;
+    height: 1.8em;
+}
+h3{
+    font-size: 1.2rem;
+    font-family:$fontifn2;
+    color:$azuloscuroifn;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}   
+
+h4{
+    font-size: 1rem;
+    font-family:$fontifn2;
+}   
+
+.botonIfn{
+    @include botones($azulifn);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    height: auto;
+    width: max-content;
+    padding: 8px;
+    border-radius: 2px;
+    border-style: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 1;
+    &:hover{
+        @include botones($grisifn);
+        height: fit-content;
+        color: $azulifn;
+        box-shadow: 1.5px 1.5px 1px 1px;
+    }
+    &::before {
+        height: 100%;
+        width: 0%;
+        background-color: $grisifn;
+        color: $azulifn;
+        left: 0;
+        top: 0;
+        position: absolute;
+        content: "";
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        z-index: -1;
+    }
+}
+
+
+.botonIfn--modificado{
+    background-color: $grisifn;
+    color: $azulifn;
+    &:hover{
+        background-color: $azulifn;
+        color: $blancoifn;
+    }
+    &:enabled{
+        border: none;
+        box-shadow: none;
+    }
+    &:checked, :active{
+        background-color: $azulifn;
+        color: $blancoifn;
+    }
+    
+}
+
+.botonIfn--modificado::before {
+    height: 100%;
+    width: 0%;
+    background-color: $azulifn;
+    color: $blancoifn;
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "";
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.botonIfn--modificado:hover::before {
+    width: 100%;
+}
+
+//
+
+
+
+
+
+
+
+.home__banner__turno{
+            margin-top: 8rem;
+            margin-left: 65%;
+            display: flex;
+            position: absolute;
+            font-size: 0.9rem;
+            text-align: center;
+            font-weight: 500;
+            background-color: $azulifn;
+            color: $blancoifn;
+            border: none;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            border-radius: 2px;
+            z-index: 1;
+            .home__banner__turno__a{
+                text-transform: uppercase;
+                text-align: center;
+                text-decoration: none;
+                color: $blancoifn;
+                padding: 15px 30px;
+                &:hover{
+                    color: $azulifn;
+                    font-weight: 500;
+                }        
+            }
+        }
+        .home__banner__turno::before {
+            height: 100%;
+            width: 0%;
+            background-color: $huesoifn;
+            color: $azulifn;
+            left: 0;
+            top: 0;
+            position: absolute;
+            content: "";
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            z-index: -1;
+        }
+        .home__banner__turno:hover::before {
+            width: 100%;
+        }
